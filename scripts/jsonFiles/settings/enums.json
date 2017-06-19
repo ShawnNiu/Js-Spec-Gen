@@ -98,17 +98,17 @@
 		"Distributed": ""
 	},
 	"Excel.ChartAxisDisplayUnit": {
-		"None": "Default option. This will reset display unit to the axis, and set unit label invisible.",
-		"Hundreds": "This will set the axis in units of hundreds.",
-		"Thousands": "This will set the axis in units of thousands.",
-		"TenThousands": "This will set the axis in units of tens of thousands.",
-		"HundredThousands": "This will set the axis in units of hundreds of thousands.",
-		"Millions": "This will set the axis in units of millions.",
-		"TenMillions": "This will set the axis in units of tens of millions.",
-		"HundredMillons": "This will set the axis in units of hundreds of millions.",
-		"Billions": "This will set the axis in units of billions.",
-		"Trillions": "This will set the axis in units of trillions.",
-		"Custom": "This will set the axis in units of custom value."
+		"None": "",
+		"Hundreds": "",
+		"Thousands": "",
+		"TenThousands": "",
+		"HundredThousands": "",
+		"Millions": "",
+		"TenMillions": "",
+		"HundredMillons": "",
+		"Billions": "",
+		"Trillions": "",
+		"Custom": ""
 	},
 	"Excel.TrendlineType": {
 		"Linear": "",
@@ -119,19 +119,20 @@
 		"Power" : ""
 	},
 	"Excel.AxisType": {
-		"Category" : "Specifies the axis type. Axis displays categories.",
-		"Value" : "Specifies the axis type. Axis displays values.",
-		"SeriesAxis" : "Specifies the axis type. Axis displays data series."
+		"Invalid" : "",
+		"Category" : "",
+		"Value" : "",
+		"SeriesAxis" : ""
 	},
-	"Excel.XlTimeUnit": {
-		"Days": "Specifies the unit of time for chart axes and data series, in days.",
-		"Months": "Specifies the unit of time for chart axes and data series, in months.",
-		"Years": "Specifies the unit of time for chart axes and data series, in years."
+	"Excel.ChartAxisTimeUnit": {
+		"Days": "",
+		"Months": "",
+		"Years": ""
 	},
-	"Excel.XlCategoryType": {
-		"Automatic": "Specifies the type of the category axis. Excel controls the axis type.",
-		"TextAxis": "Specifies the type of the category axis. Axis groups data by an arbitrary set of categories.",
-		"DateAxis": "Specifies the type of the category axis. Axis groups data on a time scale."
+	"Excel.ChartAxisCategoryType": {
+		"Automatic": "",
+		"TextAxis": "",
+		"DateAxis": ""
 	},
 	"Excel.DeleteShiftDirection": {
 		"Up": "",

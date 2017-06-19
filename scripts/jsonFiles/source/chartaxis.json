@@ -163,11 +163,11 @@
       "notes": null
     },
     {
-      "name": "majorUnitScale",
+      "name": "majorTimeUnitScale",
       "dataType": "string",
       "description": "Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.",
       "isReadOnly": false,
-      "enumNameJs": "Excel.XlTimeUnit",
+      "enumNameJs": "Excel.ChartAxisTimeUnit",
       "isCollection": false,
       "isRelationship": false,
       "reqSet": "1.9",
@@ -175,11 +175,11 @@
       "notes": null
     },
     {
-      "name": "minorUnitScale",
+      "name": "minorTimeUnitScale",
       "dataType": "string",
       "description": "Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.",
       "isReadOnly": false,
-      "enumNameJs": "Excel.XlTimeUnit",
+      "enumNameJs": "Excel.ChartAxisTimeUnit",
       "isCollection": false,
       "isRelationship": false,
       "reqSet": "1.9",
@@ -187,23 +187,11 @@
       "notes": null
     },
     {
-      "name": "baseUnit",
+      "name": "baseTimeUnit",
       "dataType": "string",
       "description": "Returns or sets the base unit for the specified category axis.",
       "isReadOnly": false,
-      "enumNameJs": "Excel.XlTimeUnit",
-      "isCollection": false,
-      "isRelationship": false,
-      "reqSet": "1.9",
-      "isKey": null,
-      "notes": null
-    },
-    {
-      "name": "categoryNames",
-      "dataType": "string",
-      "description": "Returns or sets all the category names for the specified axis, as a text array.",
-      "isReadOnly": false,
-      "enumNameJs": null,
+      "enumNameJs": "Excel.ChartAxisTimeUnit",
       "isCollection": false,
       "isRelationship": false,
       "reqSet": "1.9",
@@ -215,7 +203,7 @@
       "dataType": "string",
       "description": "Returns or sets the category axis type.",
       "isReadOnly": false,
-      "enumNameJs": "Excel.XlCategoryType",
+      "enumNameJs": "Excel.ChartAxisCategoryType",
       "isCollection": false,
       "isRelationship": false,
       "reqSet": "1.9",
@@ -223,5 +211,28 @@
       "notes": null
     }
   ],
-  "methods": null
+  "methods": [
+    {
+      "name": "setCategoryNames",
+      "returnType": "void",
+      "description": "Sets all the category names for the specified axis.",
+      "syntax": "chartAxisObject.setCategoryNames(sourceData);",
+      "signature": "setCategoryNames(sourceData: (Range)[])",
+      "restfulName": "setCategoryNames",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": [
+        {
+          "name": "sourceData",
+          "dataType": "(Range)[]",
+          "isCollection": true,
+          "description": "The Range object corresponding to the source data, or string array",
+          "isRequired": true,
+          "enumNameJs": null,
+          "notes": null
+        }
+      ],
+      "reqSet": "1.9"
+    }
+  ]
 }

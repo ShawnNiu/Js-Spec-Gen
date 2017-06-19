@@ -83,7 +83,7 @@ namespace Microsoft.ExcelServices
 			internal const double WorkbookRange = 1.8;
 			internal const double GetSurroundingRegion = 1.8;
 
-			internal const double ChartingApi = 1.9;
+			internal const double ChartingApi = 1.8;
 		}
 	}
 
@@ -2714,10 +2714,10 @@ namespace Microsoft.ExcelServices
 		internal const int ChartAxis_Title = 7;
 		internal const int ChartAxis_Format = 8;
 		internal const int ChartAxis_Type = 9;
-		internal const int ChartAxis_MinorUnitScale = 10;
-		internal const int ChartAxis_MajorUnitScale = 11;
-		internal const int ChartAxis_BaseUnit = 12;
-		internal const int ChartAxis_CategoryNames = 13;
+		internal const int ChartAxis_MinorTimeUnitScale = 10;
+		internal const int ChartAxis_MajorTimeUnitScale = 11;
+		internal const int ChartAxis_BaseTimeUnit = 12;
+		internal const int ChartAxis_SetCategoryNames = 13;
 		internal const int ChartAxis_CategoryType = 14;
 		internal const int ChartAxis_OnAccess = 15;
 		internal const int ChartAxis_DisplayUnit = 16;
@@ -3167,6 +3167,21 @@ namespace Microsoft.ExcelServices
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		ChartSeries GetItemAt(int index);
 
+		/// <summary>
+		/// Gets the first series in the collection.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_First)]
+		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
+		ChartSeries GetFirst();
+
+		/// <summary>
+		/// Gets the last series in the collection.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_Last)]
+		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
+		ChartSeries GetLast();
 
 	}
 
@@ -3305,6 +3320,21 @@ namespace Microsoft.ExcelServices
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		ChartPoint GetItemAt(int index);
 
+		/// <summary>
+		/// Gets the first point in the series.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPointsCollection_First)]
+		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
+		ChartPoint GetFirst();
+
+		/// <summary>
+		/// Gets the last point in the series.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPointsCollection_Last)]
+		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
+		ChartPoint GetLast();
 
 	}
 
@@ -3502,36 +3532,37 @@ namespace Microsoft.ExcelServices
 		/// Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale. 
 		/// </summary>
 		[ApiSet(Version = 1.9)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MajorUnitScale)]
-		XlTimeUnit MajorUnitScale { get; set; }
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MajorTimeUnitScale)]
+		ChartAxisTimeUnit MajorTimeUnitScale { get; set; }
 
 		/// <summary>
 		/// Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale. 
 		/// </summary>
 		[ApiSet(Version = 1.9)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MinorUnitScale)]
-		XlTimeUnit MinorUnitScale { get; set; }
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MinorTimeUnitScale)]
+		ChartAxisTimeUnit MinorTimeUnitScale { get; set; }
 
 		/// <summary>
 		/// Returns or sets the base unit for the specified category axis.
 		/// </summary>
 		[ApiSet(Version = 1.9)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_BaseUnit)]
-		XlTimeUnit BaseUnit { get; set; }
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_BaseTimeUnit)]
+		ChartAxisTimeUnit BaseTimeUnit { get; set; }
 
 		/// <summary>
-		/// Returns or sets all the category names for the specified axis, as a text array.
+		/// Sets all the category names for the specified axis.
 		/// </summary>
+		/// <param name="sourceData">The Range object corresponding to the source data, or string array</param>
 		[ApiSet(Version = 1.9)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CategoryNames)]
-		string[] CategoryNames { get; set; }
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCategoryNames)]
+		void SetCategoryNames([TypeScriptType("Array<string|Excel.Range>")]object sourceData);
 
 		/// <summary>
 		/// Returns or sets the category axis type.
 		/// </summary>
 		[ApiSet(Version = 1.9)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CategoryType)]
-		XlCategoryType CategoryType { get; set; }
+		ChartAxisCategoryType CategoryType { get; set; }
 	}
 
 	/// <summary>

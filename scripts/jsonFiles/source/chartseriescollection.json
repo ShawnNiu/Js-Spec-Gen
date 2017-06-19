@@ -108,6 +108,30 @@
         }
       ],
       "reqSet": "1.1"
+    },
+    {
+      "name": "getFirst",
+      "returnType": "ChartSeries",
+      "description": "Gets the first series in the collection.",
+      "syntax": "chartSeriesCollectionObject.getFirst();",
+      "signature": "getFirst()",
+      "restfulName": "First",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": null,
+      "reqSet": "1.7"
+    },
+    {
+      "name": "getLast",
+      "returnType": "ChartSeries",
+      "description": "Gets the last series in the collection.",
+      "syntax": "chartSeriesCollectionObject.getLast();",
+      "signature": "getLast()",
+      "restfulName": "Last",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": null,
+      "reqSet": "1.7"
     }
   ]
 }

@@ -77,6 +77,30 @@
         }
       ],
       "reqSet": "1.1"
+    },
+    {
+      "name": "getFirst",
+      "returnType": "ChartPoint",
+      "description": "Gets the first point in the series.",
+      "syntax": "chartPointsCollectionObject.getFirst();",
+      "signature": "getFirst()",
+      "restfulName": "First",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": null,
+      "reqSet": "1.7"
+    },
+    {
+      "name": "getLast",
+      "returnType": "ChartPoint",
+      "description": "Gets the last point in the series.",
+      "syntax": "chartPointsCollectionObject.getLast();",
+      "signature": "getLast()",
+      "restfulName": "Last",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": null,
+      "reqSet": "1.7"
     }
   ]
 }
