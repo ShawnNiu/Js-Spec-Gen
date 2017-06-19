@@ -3919,7 +3919,7 @@ namespace Microsoft.ExcelServices
 		ChartFormatString GetSubstring(int start, int length);
 
 		/// <summary>
-		/// Represents the horizontal alignment for chart title.
+		/// Represents the horizontal alignment for the specified objec
 		/// </summary>
 		[ApiSet(Version = 1.9)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_HorizontalAlignment)]
@@ -3927,7 +3927,7 @@ namespace Microsoft.ExcelServices
 	}
 
 	/// <summary>
-	/// Represents the characters in chart object like chart title, chart axis title, etc.
+	/// Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.
 	/// </summary>
 	[ApiSet(Version = 1.9)]
 	[ClientCallableComType(Name = "IChartFormatString", InterfaceId = "B1AB4E90-1A7D-4BEF-897E-FEB990ABC4B7", CoClassName = "ChartFormatString")]
@@ -4127,7 +4127,7 @@ namespace Microsoft.ExcelServices
 		ChartTrendlineFormat Format { get; }
 
 		/// <summary>
-		/// Represents the Type of a chart trendline.
+		/// Represents the type of a chart trendline.
 		/// </summary>
 		[ApiSet(Version = 1.9)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Type)]
@@ -4178,7 +4178,7 @@ namespace Microsoft.ExcelServices
 
 
 	/// <summary>
-	/// Encapsulates the format properties for chart trendline.
+	/// Represents the format properties for chart trendline.
 	/// </summary>
 	[ApiSet(Version = 1.9)]
 	[ClientCallableComType(Name = "IChartTrendlineFormat", InterfaceId = "DD906913-5D3B-4AC1-88ED-3F2DBC98CB03", CoClassName = "ChartTrendlineFormat")]

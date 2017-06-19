@@ -23,11 +23,11 @@
 |[chartSeriesCollection](../excel/chartseriescollection.md)|_Method_ > [add(name: string, index: number)](../excel/chartseriescollection.md#addname-string-index-number)|Add a new series to the collection.|1.9|
 |[chartSeriesCollection](../excel/chartseriescollection.md)|_Method_ > [getFirst()](../excel/chartseriescollection.md#getfirst)|Gets the first series in the collection.|1.7|
 |[chartSeriesCollection](../excel/chartseriescollection.md)|_Method_ > [getLast()](../excel/chartseriescollection.md#getlast)|Gets the last series in the collection.|1.7|
-|[chartTitle](../excel/charttitle.md)|_Property_ > horizontalAlignment|Represents the horizontal alignment for chart title. Possible values are: Center, Left, Right, Justify, Distributed.|1.9|
+|[chartTitle](../excel/charttitle.md)|_Property_ > horizontalAlignment|Represents the horizontal alignment for the specified objec Possible values are: Center, Left, Right, Justify, Distributed.|1.9|
 |[chartTitle](../excel/charttitle.md)|_Method_ > [getSubstring(start: number, start: number)](../excel/charttitle.md#getsubstringstart-number-start-number)|Get the characters of a chart title. Line break '\n' also counts one charater.|1.9|
 |[chartTrendline](../excel/charttrendline.md)|_Property_ > movingAveragePeriod|Represents the MovingAveragePeriod of a chart trendline, specific for trendline with MovingAverage type.|1.9|
 |[chartTrendline](../excel/charttrendline.md)|_Property_ > polynomialOrder|Represents the PolynomialOrder of a chart trendline, specific for trendline with Polynomial type.|1.9|
-|[chartTrendline](../excel/charttrendline.md)|_Property_ > type|Represents the Type of a chart trendline. Possible values are: Linear, Expontential, Logarithmic, MovingAvg, Polynomial, Power.|1.9|
+|[chartTrendline](../excel/charttrendline.md)|_Property_ > type|Represents the type of a chart trendline. Possible values are: Linear, Expontential, Logarithmic, MovingAvg, Polynomial, Power.|1.9|
 |[chartTrendline](../excel/charttrendline.md)|_Relationship_ > format|Represents the formatting of a chart trendline. Read-only.|1.9|
 |[chartTrendlineCollection](../excel/charttrendlinecollection.md)|_Property_ > items|A collection of chartTrendline objects. Read-only.|1.9|
 |[chartTrendlineCollection](../excel/charttrendlinecollection.md)|_Method_ > [add(type: string)](../excel/charttrendlinecollection.md#addtype-string)|Adds a new trendline to trendline collection.|1.9|

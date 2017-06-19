@@ -1,6 +1,6 @@
 # ChartTrendlineFormat Object (JavaScript API for Excel)
 
-Encapsulates the format properties for chart trendline.
+Represents the format properties for chart trendline.
 
 ## Properties
 

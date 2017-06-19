@@ -69,7 +69,7 @@
     {
       "name": "horizontalAlignment",
       "dataType": "string",
-      "description": "Represents the horizontal alignment for chart title.",
+      "description": "Represents the horizontal alignment for the specified objec",
       "isReadOnly": false,
       "enumNameJs": "Excel.ChartTextHorizontalAlignment",
       "isCollection": false,

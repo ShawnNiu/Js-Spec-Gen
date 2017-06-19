@@ -33,7 +33,7 @@
     {
       "name": "type",
       "dataType": "string",
-      "description": "Represents the Type of a chart trendline.",
+      "description": "Represents the type of a chart trendline.",
       "isReadOnly": false,
       "enumNameJs": "Excel.TrendlineType",
       "isCollection": false,

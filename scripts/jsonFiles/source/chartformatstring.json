@@ -1,6 +1,6 @@
 {
   "name": "ChartFormatString",
-  "description": "Represents the characters in chart object like chart title, chart axis title, etc.",
+  "description": "Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.",
   "isCollection": false,
   "collectionOf": null,
   "restPath": null,

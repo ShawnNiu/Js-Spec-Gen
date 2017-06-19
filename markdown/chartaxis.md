@@ -33,12 +33,12 @@ _See property access [examples.](#property-access-examples)_
 
 | Method		   | Return Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
-|[setCategoryNames(sourceData: Range or string[])](#setcategorynamessourcedata-)|void|Sets all the category names for the specified axis.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
+|[setCategoryNames(sourceData: ()[])](#setcategorynamessourcedata-)|void|Sets all the category names for the specified axis.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Method Details
 
 
-### setCategoryNames(sourceData: Range or string[])
+### setCategoryNames(sourceData: ()[])
 Sets all the category names for the specified axis.
 
 #### Syntax
@@ -49,7 +49,7 @@ chartAxisObject.setCategoryNames(sourceData);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|sourceData|[Range](range.md) or string[]|The Range object corresponding to the source data, or string array|
+|sourceData|()[]|The Range object corresponding to the source data, or string array|
 
 #### Returns
 void

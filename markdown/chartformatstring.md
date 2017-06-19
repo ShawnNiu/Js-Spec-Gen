@@ -1,6 +1,6 @@
 # ChartFormatString Object (JavaScript API for Excel)
 
-Represents the characters in chart object like chart title, chart axis title, etc.
+Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.
 
 ## Properties
 

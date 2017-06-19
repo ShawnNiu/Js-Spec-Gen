@@ -1,6 +1,6 @@
 {
   "name": "ChartTrendlineFormat",
-  "description": "Encapsulates the format properties for chart trendline.",
+  "description": "Represents the format properties for chart trendline.",
   "isCollection": false,
   "collectionOf": null,
   "restPath": null,
