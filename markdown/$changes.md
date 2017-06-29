@@ -9,7 +9,7 @@
 |[chartAxis](../excel/chartaxis.md)|_Property_ > minorTimeUnitScale|Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale. Possible values are: Days, Months, Years.|1.9|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > showDisplayUnitLabel|Represents whether the axis display unit label is visible.|1.9|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > type|Represents the axis type. Read-only. Possible values are: Invalid, Category, Value, SeriesAxis.|1.9|
-|[chartAxis](../excel/chartaxis.md)|_Method_ > [setCategoryNames(sourceData: ()[])](../excel/chartaxis.md#setcategorynamessourcedata-)|Sets all the category names for the specified axis.|1.9|
+|[chartAxis](../excel/chartaxis.md)|_Method_ > [setCategoryNames(sourceData: Range)](../excel/chartaxis.md#setcategorynamessourcedata-range)|Sets all the category names for the specified axis.|1.9|
 |[chartBorder](../excel/chartborder.md)|_Method_ > [clear()](../excel/chartborder.md#clear)|Clear the border color of a chart element.|1.9|
 |[chartBorder](../excel/chartborder.md)|_Method_ > [setSolidColor(color: string)](../excel/chartborder.md#setsolidcolorcolor-string)|Sets the border formatting of a chart element to a uniform color.|1.9|
 |[chartFormatString](../excel/chartformatstring.md)|_Relationship_ > font|Represents the font attributes, such as font name, font size, color, etc. of chart characters object. Read-only.|1.9|

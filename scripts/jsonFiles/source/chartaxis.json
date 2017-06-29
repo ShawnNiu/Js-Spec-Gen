@@ -217,15 +217,15 @@
       "returnType": "void",
       "description": "Sets all the category names for the specified axis.",
       "syntax": "chartAxisObject.setCategoryNames(sourceData);",
-      "signature": "setCategoryNames(sourceData: ()[])",
+      "signature": "setCategoryNames(sourceData: Range)",
       "restfulName": "setCategoryNames",
       "notes": null,
       "httpSuccessResponse": null,
       "parameters": [
         {
           "name": "sourceData",
-          "dataType": "()[]",
-          "isCollection": true,
+          "dataType": "Range",
+          "isCollection": false,
           "description": "The Range object corresponding to the source data, or string array",
           "isRequired": true,
           "enumNameJs": null,
