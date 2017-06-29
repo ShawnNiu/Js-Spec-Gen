@@ -151,6 +151,18 @@
       "notes": null
     },
     {
+      "name": "showAllFieldButtons",
+      "dataType": "bool",
+      "description": "Returns or sets whether to display all field buttons on a PivotChart. Readwrite",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "isKey": null,
+      "notes": null
+    },
+    {
       "name": "format",
       "dataType": "ChartAreaFormat",
       "description": "Encapsulates the format properties for the chart area.",
