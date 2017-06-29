@@ -1,6 +1,6 @@
 |Object| What is new| Description|Feedback|
 |:----|:----|:----|:----|
-|[chart](../excel/chart.md)|_Property_ > showAllFieldButtons|Returns or sets whether to display all field buttons on a PivotChart. Readwrite|ApiSet.InProgressFeatures.ChartingAPI|
+|[chart](../excel/chart.md)|_Property_ > showAllFieldButtons|Returns or sets whether to display all field buttons on a PivotChart. ReadWrite.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > baseTimeUnit|Returns or sets the base unit for the specified category axis. Possible values are: Days, Months, Years.|1.9|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > categoryType|Returns or sets the category axis type. Possible values are: Automatic, TextAxis, DateAxis.|1.9|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > customDisplayUnit|Represents the custom axis display unit value.|1.9|

@@ -10,7 +10,7 @@ Represents a chart object in a workbook.
 |id|string|Gets a chart based on its position in the collection. Read-only.|[1.2](../requirement-sets/excel-api-requirement-sets.md)|
 |left|double|The distance, in points, from the left side of the chart to the worksheet origin.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 |name|string|Represents the name of a chart object.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
-|showAllFieldButtons|bool|Returns or sets whether to display all field buttons on a PivotChart. Readwrite|[ApiSet.InProgressFeatures.ChartingAPI](../requirement-sets/excel-api-requirement-sets.md)|
+|showAllFieldButtons|bool|Returns or sets whether to display all field buttons on a PivotChart. ReadWrite.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 |top|double|Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 |width|double|Represents the width, in points, of the chart object.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 

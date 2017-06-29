@@ -153,12 +153,12 @@
     {
       "name": "showAllFieldButtons",
       "dataType": "bool",
-      "description": "Returns or sets whether to display all field buttons on a PivotChart. Readwrite",
+      "description": "Returns or sets whether to display all field buttons on a PivotChart. ReadWrite.",
       "isReadOnly": false,
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
