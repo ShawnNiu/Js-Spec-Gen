@@ -226,7 +226,7 @@
           "name": "sourceData",
           "dataType": "Range",
           "isCollection": false,
-          "description": "The Range object corresponding to the source data, or string array",
+          "description": "The Range object corresponding to the source data.",
           "isRequired": true,
           "enumNameJs": null,
           "notes": null

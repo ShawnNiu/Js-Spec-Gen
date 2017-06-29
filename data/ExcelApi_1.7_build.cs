@@ -3560,7 +3560,7 @@ namespace Microsoft.ExcelServices
 		/// <summary>
 		/// Sets all the category names for the specified axis.
 		/// </summary>
-		/// <param name="sourceData">The Range object corresponding to the source data, or string array</param>
+		/// <param name="sourceData">The Range object corresponding to the source data.</param>
 		[ApiSet(Version = 1.9)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCategoryNames)]
 		void SetCategoryNames([TypeScriptType("Excel.Range")]object sourceData);
