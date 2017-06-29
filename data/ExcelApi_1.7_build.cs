@@ -2754,6 +2754,7 @@ namespace Microsoft.ExcelServices
 		internal const int Chart_SetPosition = 16;
 		internal const int Chart_GetImage = 17;
 		internal const int Chart_Worksheet = 18;
+		internal const int Chart_ShowAllFieldButtons = 19;
 
 		internal const int ChartAreaFormat_Fill = 1;
 		internal const int ChartAreaFormat_Font = 2;
@@ -3066,6 +3067,13 @@ namespace Microsoft.ExcelServices
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_Width)]
 		double Width { get; set; }
+
+		/// <summary>
+		/// Returns or sets whether to display all field buttons on a PivotChart. Read/write
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowAllFieldButtons)]
+		bool? ShowAllFieldButtons { get; set; }
 
 		/// <summary>
 		/// Encapsulates the format properties for the chart area. Read-only.
