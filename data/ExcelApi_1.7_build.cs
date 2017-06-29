@@ -3069,9 +3069,9 @@ namespace Microsoft.ExcelServices
 		double Width { get; set; }
 
 		/// <summary>
-		/// Returns or sets whether to display all field buttons on a PivotChart. Read/write
+		/// Returns or sets whether to display all field buttons on a PivotChart. Read/Write.
 		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowAllFieldButtons)]
 		bool? ShowAllFieldButtons { get; set; }
 
