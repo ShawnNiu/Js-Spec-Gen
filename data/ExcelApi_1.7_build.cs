@@ -84,6 +84,8 @@ namespace Microsoft.ExcelServices
 			internal const double GetSurroundingRegion = 1.8;
 
 			internal const double ChartingApi = 1.8;
+
+			internal const double Event = 1.8;
 		}
 	}
 
@@ -201,9 +203,232 @@ namespace Microsoft.ExcelServices
 		public SettingCollection Settings { get; set; }
 	}
 
+	/// <summary>
+	/// Provides information about the worksheet that raised the DataChanged event.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+	[ClientCallableType(ExcludedFromRest = true)]
+	public struct WorksheetDataChangedEvent
+	{
+		/// <summary>
+		/// Gets the type of the event. See Excel.EventType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventType Type { get; set; }
+
+		/// <summary>
+		/// Gets the context object that facilitates requests to the Excel application.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		object Context { get; set; }
+
+		/// <summary>
+		/// Gets the source of the event. See Excel.EventSource for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventSource Source { get; set; }
+
+		/// <summary>
+		/// Gets the range that represents the changed area of a specific worksheet.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Range Range { get; set; }
+
+		/// <summary>
+		/// Gets the change type that represents how the DataChanged event is triggered. See Excel.DataChangeType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		DataChangeType ChangeType { get; set; }
+	}
+
+	/// <summary>
+	/// Provides information about the table that raised the DataChanged event.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+	[ClientCallableType(ExcludedFromRest = true)]
+	public struct TableDataChangedEvent
+	{
+		/// <summary>
+		/// Gets the type of the event. See Excel.EventType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventType Type { get; set; }
+
+		/// <summary>
+		/// Gets the context object that facilitates requests to the Excel application.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		object Context { get; set; }
+
+		/// <summary>
+		/// Gets the source of the event. See Excel.EventSource for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventSource Source { get; set; }
+
+		/// <summary>
+		/// Gets the table in which the data changed.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Table Table { get; set; }
+
+		/// <summary>
+		/// Gets the range that represents the changed area of a table on a specific worksheet.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Range Range { get; set; }
+
+		/// <summary>
+		/// Gets the change type that represents how the DataChanged event is triggered. See Excel.DataChangeType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		DataChangeType ChangeType { get; set; }
+	}
+
+	/// <summary>
+	/// Provides information about the worksheet that raised the Activated event.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+	[ClientCallableType(ExcludedFromRest = true)]
+	public struct WorksheetActivatedEvent
+	{
+		/// <summary>
+		/// Gets the type of the event. See Excel.EventType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventType Type { get; set; }
+
+		/// <summary>
+		/// Gets the context object that facilitates requests to the Excel application.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		object Context { get; set; }
+
+		/// <summary>
+		/// Gets the worksheet that is activated.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Worksheet Worksheet { get; set; }
+	}
+
+	/// <summary>
+	/// Provides information about the worksheet that raised the Deactivated event.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+	[ClientCallableType(ExcludedFromRest = true)]
+	public struct WorksheetDeactivatedEvent
+	{
+		/// <summary>
+		/// Gets the type of the event. See Excel.EventType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventType Type { get; set; }
+
+		/// <summary>
+		/// Gets the context object that facilitates requests to the Excel application.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		object Context { get; set; }
+
+		/// <summary>
+		/// Gets the worksheet that is deactivated.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Worksheet Worksheet { get; set; }
+	}
+
+	/// <summary>
+	/// Provides information about the worksheet that raised the SelectionChanged event.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+	[ClientCallableType(ExcludedFromRest = true)]
+	public struct WorksheetSelectionChangedEvent
+	{
+		/// <summary>
+		/// Gets the type of the event. See Excel.EventType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventType Type { get; set; }
+
+		/// <summary>
+		/// Gets the context object that facilitates requests to the Excel application.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		object Context { get; set; }
+
+		/// <summary>
+		/// Gets the range that represents the selected area of a specific worksheet.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Range Range { get; set; }
+	}
+
+	/// <summary>
+	/// Provides information about the table that raised the SelectionChanged event.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+	[ClientCallableType(ExcludedFromRest = true)]
+	public struct TableSelectionChangedEvent
+	{
+		/// <summary>
+		/// Gets the type of the event. See Excel.EventType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventType Type { get; set; }
+
+		/// <summary>
+		/// Gets the context object that facilitates requests to the Excel application.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		object Context { get; set; }
+
+		/// <summary>
+		/// Gets the table in which the selection changed.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Table Table { get; set; }
+
+		/// <summary>
+		/// Gets the range that represents the selected area of the table on a specific worksheet.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Range Range { get; set; }
+	}
+
+	/// <summary>
+	/// Provides information about the worksheet that raised the Added event.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+	[ClientCallableType(ExcludedFromRest = true)]
+	public struct WorksheetAddedEvent
+	{
+		/// <summary>
+		/// Gets the type of the event. See Excel.EventType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventType Type { get; set; }
+
+		/// <summary>
+		/// Gets the context object that facilitates requests to the Excel application.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		object Context { get; set; }
+
+		/// <summary>
+		/// Gets the source of the event. See Excel.EventSource for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		EventSource Source { get; set; }
+
+		/// <summary>
+		/// Gets the worksheet that is added to the workbook.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		Worksheet Worksheet { get; set; }
+	}
 	#endregion
 
-#region Application
+	#region Application
 	internal static class ApplicationDispatchIds
 	{
 		internal const int Application_CalculationMode = 1;
@@ -566,6 +791,13 @@ namespace Microsoft.ExcelServices
 		string Id { get; }
 
 		/// <summary>
+		/// Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+		/// </summary>
+		[ApiSet(Version = 1.1)]
+		[ClientCallableComMember(DispatchId = WorksheetDispatchIds.Worksheet_Id)]
+		string Id { get; }
+
+		/// <summary>
 		/// The zero-based position of the worksheet within the workbook.
 		/// </summary>
 		[ApiSet(Version = 1.1)]
@@ -614,6 +846,30 @@ namespace Microsoft.ExcelServices
 		[ApiSet(Version = 1.4)]
 		[ClientCallableComMember(DispatchId = WorksheetDispatchIds.Worksheet_Names)]
 		NamedItemCollection Names { get; }
+
+		/// <summary>
+		/// Occurs when data changed on a specific worksheet.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<WorksheetDataChangedEvent> DataChanged;
+
+		/// <summary>
+		/// Occurs when the selection changed on a specific worksheet.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<WorksheetSelectionChangedEvent> SelectionChanged;
+
+		/// <summary>
+		/// Occurs when the worksheet is activated.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<WorksheetActivatedEvent> Activated;
+
+		/// <summary>
+		/// Occurs when the worksheet is deactivated.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<WorksheetDeactivatedEvent> Deactivated;
 
 	}
 
@@ -684,6 +940,24 @@ namespace Microsoft.ExcelServices
 		[ClientCallableComMember(DispatchId = WorksheetDispatchIds.WorksheetCollection_Last)]
 		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
 		Worksheet GetLast([Optional]bool visibleOnly);
+
+		/// <summary>
+		/// Occurs when a new worksheet is added to the workbook.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<WorksheetAddedEvent> Added;
+
+		/// <summary>
+		/// Occurs when any worksheet in the workbook is activated.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<WorksheetActivatedEvent> Activated;
+
+		/// <summary>
+		/// Occurs when any worksheet in the workbook is deactivated.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<WorksheetDeactivatedEvent> Dectivated;
 	}
 
 	/// <summary>
@@ -1993,6 +2267,24 @@ namespace Microsoft.ExcelServices
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = TableDispatchIds.TableCollection_Add)]
 		Table Add(object address, bool hasHeaders);
+
+		/// <summary>
+		/// Occurs when data changed on any table in a workbook, or a worksheet.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<TableDataChangedEvent> DataChanged;
+
+		/// <summary>
+		/// Occurs when data changed on a specific table.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<TableDataChangedEvent> DataChanged;
+
+		/// <summary>
+		/// Occurs when the selection changed on a specific table.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.Event)]
+		event EventHandler<TableSelectionChangedEvent> SelectionChanged;
 	}
 
 	/// <summary>

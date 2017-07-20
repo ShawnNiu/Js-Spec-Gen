@@ -31,6 +31,42 @@
       "notes": null
     },
     {
+      "name": "freezePanes",
+      "dataType": "WorksheetFreezePanes",
+      "description": "Gets an object that can be used to manipulate frozen panes on the worksheet",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "ApiSet.InProgressFeatures.SmallApiAdditions",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "headings",
+      "dataType": "bool",
+      "description": "Gets or sets the worksheet's headings flag.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.SmallApiAdditions",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "id",
+      "dataType": "string",
+      "description": "Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.1",
+      "isKey": null,
+      "notes": null
+    },
+    {
       "name": "id",
       "dataType": "string",
       "description": "Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.",
@@ -123,6 +159,18 @@
       "isCollection": true,
       "isRelationship": true,
       "reqSet": "1.4",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "tabColor",
+      "dataType": "string",
+      "description": "Gets or sets the worksheet tab color.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.SmallApiAdditions",
       "isKey": null,
       "notes": null
     }

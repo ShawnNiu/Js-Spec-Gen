@@ -1,0 +1,83 @@
+{
+  "name": "WorksheetDataChangedEvent",
+  "description": "Provides information about the worksheet that raised the DataChanged event.",
+  "isCollection": false,
+  "collectionOf": null,
+  "restPath": null,
+  "info": {
+    "version": "1.1",
+    "reqSet": "ApiSet.InProgressFeatures.Event",
+    "addinTypes": [
+      "Excel"
+    ],
+    "nameSpace": "Excel",
+    "addinHosts": [
+      "Task pane"
+    ],
+    "title": "Office JavaScript Add-in API",
+    "description": "Office JavaScript Add-in API"
+  },
+  "properties": [
+    {
+      "name": "type",
+      "dataType": "string",
+      "description": "Gets the type of the event.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.EventType",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.Event",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "context",
+      "dataType": "object",
+      "description": "Gets the context object that facilitates requests to the Excel application.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.Event",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "source",
+      "dataType": "string",
+      "description": "Gets the source of the event.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.EventSource",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.Event",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "range",
+      "dataType": "Range",
+      "description": "Gets the range that represents the changed area of a specific worksheet.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "ApiSet.InProgressFeatures.Event",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "changeType",
+      "dataType": "string",
+      "description": "Gets the change type that represents how the DataChanged event is triggered.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.DataChangeType",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.Event",
+      "isKey": null,
+      "notes": null
+    }
+  ],
+  "methods": null
+}

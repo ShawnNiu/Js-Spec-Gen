@@ -6,9 +6,12 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
 | Property	   | Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
+|headings|bool|Gets or sets the worksheet's headings flag.|[ApiSet.InProgressFeatures.SmallApiAdditions](../requirement-sets/excel-api-requirement-sets.md)|
+|id|string|Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 |id|string|Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 |name|string|The display name of the worksheet.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 |position|int|The zero-based position of the worksheet within the workbook.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
+|tabColor|string|Gets or sets the worksheet tab color.|[ApiSet.InProgressFeatures.SmallApiAdditions](../requirement-sets/excel-api-requirement-sets.md)|
 |visibility|string|The Visibility of the worksheet. Possible values are: Visible, Hidden, VeryHidden.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 
 _See property access [examples.](#property-access-examples)_
@@ -17,6 +20,7 @@ _See property access [examples.](#property-access-examples)_
 | Relationship | Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
 |charts|[ChartCollection](chartcollection.md)|Returns collection of charts that are part of the worksheet. Read-only.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
+|freezePanes|[WorksheetFreezePanes](worksheetfreezepanes.md)|Gets an object that can be used to manipulate frozen panes on the worksheet Read-only.|[ApiSet.InProgressFeatures.SmallApiAdditions](../requirement-sets/excel-api-requirement-sets.md)|
 |names|[NamedItemCollection](nameditemcollection.md)|Collection of names scoped to the current worksheet. Read-only.|[1.4](../requirement-sets/excel-api-requirement-sets.md)|
 |pivotTables|[PivotTableCollection](pivottablecollection.md)|Collection of PivotTables that are part of the worksheet. Read-only.|[1.3](../requirement-sets/excel-api-requirement-sets.md)|
 |protection|[WorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|[1.2](../requirement-sets/excel-api-requirement-sets.md)|
