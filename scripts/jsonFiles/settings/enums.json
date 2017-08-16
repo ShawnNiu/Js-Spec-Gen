@@ -97,6 +97,13 @@
     "Justify": "",
     "Distributed": ""
   },
+  "Excel.ChartTextVerticalAlignment": {
+    "Center": "",
+    "Bottom": "",
+    "Top": "",
+    "Justify": "",
+    "Distributed": ""
+  },
   "Excel.ChartAxisDisplayUnit": {
     "None": "",
     "Hundreds": "",

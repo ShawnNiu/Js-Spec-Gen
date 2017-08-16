@@ -3121,6 +3121,12 @@ namespace Microsoft.ExcelServices
 		internal const int ChartTitle_OnAccess = 5;
 		internal const int ChartTitle_GetSubstring = 6;
 		internal const int ChartTitle_HorizontalAlignment = 7;
+		internal const int ChartTitle_Top = 8;
+		internal const int ChartTitle_Left = 9;
+		internal const int ChartTitle_Width = 10;
+		internal const int ChartTitle_Height = 11;
+		internal const int ChartTitle_SetFormula = 12;
+		internal const int ChartTitle_VerticalAlignment = 13;
 
 		internal const int ChartTitleFormat_Font = 1;
 		internal const int ChartTitleFormat_Fill = 2;
@@ -4224,6 +4230,48 @@ namespace Microsoft.ExcelServices
 		[ApiSet(Version = 1.9)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_HorizontalAlignment)]
 		ChartTextHorizontalAlignment? HorizontalAlignment { get; set; }
+
+		/// <summary>
+		/// Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title's not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Top)]
+		double? Top { get; set; }
+
+		/// <summary>
+		/// Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title's not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Left)]
+		double? Left { get; set; }
+
+		/// <summary>
+		/// Returns the width, in points, of the chart title. Read-only. Null if chart title's not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Width)]
+		double? Width { get; }
+
+		/// <summary>
+		/// Returns the height, in points, of the chart title. Read-only. Null if chart title's not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Height)]
+		double? Height { get; }
+
+		/// <summary>
+		/// Sets a string value that represents the formula of chart title using A1-style notation.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_SetFormula)]
+		void SetFormula(string formula);
+
+		/// <summary>
+		/// Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_VerticalAlignment)]
+		ChartTextVerticalAlignment? VerticalAlignment { get; set; }
 	}
 
 	/// <summary>
