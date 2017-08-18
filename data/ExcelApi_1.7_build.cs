@@ -3184,6 +3184,9 @@ namespace Microsoft.ExcelServices
 		internal const int ChartTrendline_PolynomialOrder = 3;
 		internal const int ChartTrendline_MovingAveragePeriod = 4;
 		internal const int ChartTrendline_OnAccess = 5;
+		internal const int ChartTrendline_Id = 6;
+		internal const int ChartTrendline_DisplayEquation = 7;
+		internal const int ChartTrendline_DisplayRSquared = 8;
 
 		internal const int ChartTrendlineCollection_OnAccess = 1;
 		internal const int ChartTrendlineCollection_GetCount = 2;
@@ -4546,6 +4549,27 @@ public interface ChartLegend
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_OnAccess)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		void _OnAccess();
+
+		/// <summary>
+		/// Represents the index of a chart trendline, index is the trendline's inserted order. Private. Read-only.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Id)]
+		int _Id { get; }
+
+		/// <summary>
+		/// True if the equation for the trendline is displayed on the chart.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_DisplayEquation)]
+		bool? DisplayEquation { get; set; }
+
+		/// <summary>
+		/// True if the R-squared for the trendline is displayed on the chart.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_DisplayRSquared)]
+		bool? DisplayRSquared { get; set; }
 
 		/// <summary>
 		/// Represents the formatting of a chart trendline. Read-only.
