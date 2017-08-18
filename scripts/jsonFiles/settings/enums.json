@@ -524,5 +524,13 @@
     "WorksheetDeactivated": "",
     "TableDataChanged": "",
     "TableSelectionChanged": ""
+	},
+	"Excel.AxisGroup":{
+		"Primary": "",
+		"Secondary": ""
+	},
+	"Excel.AxisScaleType":{
+		"Linear": "",
+		"Logarithmic": ""
 	}
 }

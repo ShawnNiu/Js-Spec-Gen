@@ -55,5 +55,37 @@
       "notes": null
     }
   ],
-  "methods": null
+  "methods": [
+    {
+      "name": "getItem",
+      "returnType": "ChartAxis",
+      "description": "Returns the specific axis identified by type and group.",
+      "syntax": "chartAxesObject.getItem(type, group);",
+      "signature": "getItem(type: string, group: string)",
+      "restfulName": "Item",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": [
+        {
+          "name": "type",
+          "dataType": "string",
+          "isCollection": false,
+          "description": "type",
+          "isRequired": true,
+          "enumNameJs": "Excel.AxisType",
+          "notes": null
+        },
+        {
+          "name": "group",
+          "dataType": "string",
+          "isCollection": false,
+          "description": "group",
+          "isRequired": false,
+          "enumNameJs": "Excel.AxisGroup",
+          "notes": null
+        }
+      ],
+      "reqSet": "1.8"
+    }
+  ]
 }

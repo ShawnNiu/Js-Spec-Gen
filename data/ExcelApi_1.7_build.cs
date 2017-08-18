@@ -2996,6 +2996,7 @@ namespace Microsoft.ExcelServices
 		internal const int ChartAxes_Series = 2;
 		internal const int ChartAxes_Value = 3;
 		internal const int ChartAxes_OnAccess = 4;
+		internal const int ChartAxes_GetItem = 5;
 
 		internal const int ChartAxis_MajorGridlines = 1;
 		internal const int ChartAxis_MajorUnit = 2;
@@ -3015,6 +3016,10 @@ namespace Microsoft.ExcelServices
 		internal const int ChartAxis_DisplayUnit = 16;
 		internal const int ChartAxis_ShowDisplayUnitLabel = 17;
 		internal const int ChartAxis_CustomDisplayUnit = 18;
+		internal const int ChartAxis_SetCustomDisplayUnit = 19;
+		internal const int ChartAxis_AxisGroup = 20;
+		internal const int ChartAxis_ScaleType = 21;
+		internal const int ChartAxis_LogBase = 22;
 
 		internal const int ChartAxisFormat_Font = 1;
 		internal const int ChartAxisFormat_Line = 2;
@@ -3780,6 +3785,16 @@ namespace Microsoft.ExcelServices
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxes_Value)]
 		[JsonStringify()]
 		ChartAxis ValueAxis { get; }
+
+		/// <summary>
+		/// Returns the specific axis identified by type and group.
+		/// </summary>
+		/// <param name="type">type</param>
+		/// <param name="group">group</param>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxes_GetItem)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		ChartAxis GetItem(AxisType type, [Optional] AxisGroup? group);
 	}
 
 	/// <summary>
@@ -3868,12 +3883,19 @@ namespace Microsoft.ExcelServices
 		bool ShowDisplayUnitLabel { get; set; }
 
 		/// <summary>
-		/// Represents the custom axis display unit value. 
+		/// Represents the custom axis display unit value. Read Only. To set this property, please use the SetCustomDisplayUnit(double) method.
 		/// </summary>
 		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CustomDisplayUnit)]
-		double CustomDisplayUnit { get; set; }
+		double CustomDisplayUnit { get; }
 
+		/// <summary>
+		/// Sets the axis display unit to a custom value.
+		/// </summary>
+		/// <param name="value">value.</param>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCustomDisplayUnit)]
+		void SetCustomDisplayUnit(double value);
 
 		/// <summary>
 		/// Represents the axis type. Read-only.
@@ -3917,6 +3939,28 @@ namespace Microsoft.ExcelServices
 		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CategoryType)]
 		ChartAxisCategoryType CategoryType { get; set; }
+
+		
+		/// <summary>
+		/// Represents the group for the specified axis.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_AxisGroup)]
+		AxisGroup AxisGroup { get; }
+
+		/// <summary>
+		/// Represents the value axis scale type.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_ScaleType)]
+		AxisScaleType? ScaleType { get; set; }
+
+		/// <summary>
+		/// Represents the base of the logarithm when using logarithmic scales.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_LogBase)]
+		double? LogBase { get; set; }
 	}
 
 	/// <summary>
