@@ -19,6 +19,30 @@
   },
   "properties": [
     {
+      "name": "displayEquation",
+      "dataType": "bool",
+      "description": "True if the equation for the trendline is displayed on the chart.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "displayRSquared",
+      "dataType": "bool",
+      "description": "True if the R-squared for the trendline is displayed on the chart.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
       "name": "format",
       "dataType": "ChartTrendlineFormat",
       "description": "Represents the formatting of a chart trendline.",

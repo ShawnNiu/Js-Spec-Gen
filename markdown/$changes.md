@@ -37,6 +37,8 @@
 |[chartTitle](../excel/charttitle.md)|_Property_ > width|Returns the width, in points, of the chart title. Read-only. Null if chart title's not visible. Read-only.|1.8|
 |[chartTitle](../excel/charttitle.md)|_Method_ > [getSubstring(start: number, start: number)](../excel/charttitle.md#getsubstringstart-number-start-number)|Get the characters of a chart title. Line break '\n' also counts one charater.|1.8|
 |[chartTitle](../excel/charttitle.md)|_Method_ > [setFormula(formula: string)](../excel/charttitle.md#setformulaformula-string)|Sets a string value that represents the formula of chart title using A1-style notation.|1.8|
+|[chartTrendline](../excel/charttrendline.md)|_Property_ > displayEquation|True if the equation for the trendline is displayed on the chart.|1.8|
+|[chartTrendline](../excel/charttrendline.md)|_Property_ > displayRSquared|True if the R-squared for the trendline is displayed on the chart.|1.8|
 |[chartTrendline](../excel/charttrendline.md)|_Property_ > movingAveragePeriod|Represents the MovingAveragePeriod of a chart trendline, specific for trendline with MovingAverage type.|1.8|
 |[chartTrendline](../excel/charttrendline.md)|_Property_ > polynomialOrder|Represents the PolynomialOrder of a chart trendline, specific for trendline with Polynomial type.|1.8|
 |[chartTrendline](../excel/charttrendline.md)|_Property_ > type|Represents the type of a chart trendline. Possible values are: Linear, Expontential, Logarithmic, MovingAvg, Polynomial, Power.|1.8|
