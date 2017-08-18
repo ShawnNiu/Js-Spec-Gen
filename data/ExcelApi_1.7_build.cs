@@ -3105,6 +3105,11 @@ namespace Microsoft.ExcelServices
 		internal const int ChartLegend_Overlay = 3;
 		internal const int ChartLegend_Format = 4;
 		internal const int ChartLegend_OnAccess = 5;
+		internal const int ChartLegend_Left = 6;
+		internal const int ChartLegend_Top = 7;
+		internal const int ChartLegend_Width = 8;
+		internal const int ChartLegend_Height = 9;
+		internal const int ChartLegend_HasShadow = 10;
 
 		internal const int ChartLegendFormat_Font = 1;
 		internal const int ChartLegendFormat_Fill = 2;
@@ -4110,7 +4115,7 @@ namespace Microsoft.ExcelServices
 	/// </summary>
 	[ApiSet(Version = 1.1)]
 	[ClientCallableComType(Name = "IChartLegend", InterfaceId = "a5c915bf-d752-4b33-95e0-5f84c6e9a46a", CoClassName = "ChartLegend")]
-	public interface ChartLegend
+public interface ChartLegend
 	{
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_OnAccess)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
@@ -4125,11 +4130,32 @@ namespace Microsoft.ExcelServices
 		ChartLegendFormat Format { get; }
 
 		/// <summary>
-		/// A boolean value the represents the visibility of a ChartLegend object.
+		/// Represents if the legend has shadow on the chart.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_HasShadow)]
+		bool? HasShadow { get; set; }
+
+		/// <summary>
+		/// Represents the height of the legend on the chart.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Height)]
+		double? Height { get; set; }
+
+		/// <summary>
+		/// Represents the left of a chart legend.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Left)]
+		double? Left { get; set; }
+
+		/// <summary>
+		/// Boolean value for whether the chart legend should overlap with the main body of the chart.
 		/// </summary>
 		[ApiSet(Version = 1.1)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Visible)]
-		bool Visible { get; set; }
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Overlay)]
+		bool? Overlay { get; set; }
 
 		/// <summary>
 		/// Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
@@ -4139,11 +4165,25 @@ namespace Microsoft.ExcelServices
 		ChartLegendPosition? Position { get; set; }
 
 		/// <summary>
-		/// Boolean value for whether the chart legend should overlap with the main body of the chart.
+		/// Represents the top of a chart legend.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Top)]
+		double? Top { get; set; }
+
+		/// <summary>
+		/// A boolean value the represents the visibility of a ChartLegend object.
 		/// </summary>
 		[ApiSet(Version = 1.1)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Overlay)]
-		bool? Overlay { get; set; }
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Visible)]
+		bool Visible { get; set; }
+
+		/// <summary>
+		/// Represents the width of the legend on the chart.
+		/// </summary>
+		[ApiSet(Version = 1.8)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Width)]
+		double? Width { get; set; }
 	}
 
 	/// <summary>
