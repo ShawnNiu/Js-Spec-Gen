@@ -141,8 +141,8 @@
     {
       "name": "customDisplayUnit",
       "dataType": "double",
-      "description": "Represents the custom axis display unit value.",
-      "isReadOnly": false,
+      "description": "Represents the custom axis display unit value. Read Only. To set this property, please use the SetCustomDisplayUnit(double) method.",
+      "isReadOnly": true,
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
@@ -209,9 +209,67 @@
       "reqSet": "1.8",
       "isKey": null,
       "notes": null
+    },
+    {
+      "name": "axisGroup",
+      "dataType": "string",
+      "description": "Represents the group for the specified axis.",
+      "isReadOnly": true,
+      "enumNameJs": "Excel.AxisGroup",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "scaleType",
+      "dataType": "string",
+      "description": "Represents the value axis scale type.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.AxisScaleType",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "logBase",
+      "dataType": "double",
+      "description": "Represents the base of the logarithm when using logarithmic scales.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
     }
   ],
   "methods": [
+    {
+      "name": "setCustomDisplayUnit",
+      "returnType": "void",
+      "description": "Sets the axis display unit to a custom value.",
+      "syntax": "chartAxisObject.setCustomDisplayUnit(value);",
+      "signature": "setCustomDisplayUnit(value: double)",
+      "restfulName": "setCustomDisplayUnit",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": [
+        {
+          "name": "value",
+          "dataType": "double",
+          "isCollection": false,
+          "description": "value.",
+          "isRequired": true,
+          "enumNameJs": null,
+          "notes": null
+        }
+      ],
+      "reqSet": "1.8"
+    },
     {
       "name": "setCategoryNames",
       "returnType": "void",

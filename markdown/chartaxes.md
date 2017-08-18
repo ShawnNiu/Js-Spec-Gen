@@ -14,5 +14,27 @@ None
 |valueAxis|[ChartAxis](chartaxis.md)|Represents the value axis in an axis. Read-only.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Methods
-None
 
+| Method		   | Return Type	|Description| Req. Set|
+|:---------------|:--------|:----------|:----|
+|[getItem(type: string, group: string)](#getitemtype-string-group-string)|[ChartAxis](chartaxis.md)|Returns the specific axis identified by type and group.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+
+## Method Details
+
+
+### getItem(type: string, group: string)
+Returns the specific axis identified by type and group.
+
+#### Syntax
+```js
+chartAxesObject.getItem(type, group);
+```
+
+#### Parameters
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|type|string|type  Possible values are: Invalid, Category, Value, SeriesAxis|
+|group|string|Optional. group  Possible values are: Primary, Secondary|
+
+#### Returns
+[ChartAxis](chartaxis.md)

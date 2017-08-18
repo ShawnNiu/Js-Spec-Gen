@@ -1,15 +1,20 @@
 |Object| What is new| Description|Feedback|
 |:----|:----|:----|:----|
 |[chart](../excel/chart.md)|_Property_ > showAllFieldButtons|Returns or sets whether to display all field buttons on a PivotChart. ReadWrite.|1.8|
+|[chartAxes](../excel/chartaxes.md)|_Method_ > [getItem(type: string, group: string)](../excel/chartaxes.md#getitemtype-string-group-string)|Returns the specific axis identified by type and group.|1.8|
+|[chartAxis](../excel/chartaxis.md)|_Property_ > axisGroup|Represents the group for the specified axis. Read-only. Possible values are: Primary, Secondary.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > baseTimeUnit|Returns or sets the base unit for the specified category axis. Possible values are: Days, Months, Years.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > categoryType|Returns or sets the category axis type. Possible values are: Automatic, TextAxis, DateAxis.|1.8|
-|[chartAxis](../excel/chartaxis.md)|_Property_ > customDisplayUnit|Represents the custom axis display unit value.|1.8|
+|[chartAxis](../excel/chartaxis.md)|_Property_ > customDisplayUnit|Represents the custom axis display unit value. Read Only. To set this property, please use the SetCustomDisplayUnit(double) method. Read-only.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > displayUnit|Represents the axis display unit. Possible values are: None, Hundreds, Thousands, TenThousands, HundredThousands, Millions, TenMillions, HundredMillons, Billions, Trillions, Custom.|1.8|
+|[chartAxis](../excel/chartaxis.md)|_Property_ > logBase|Represents the base of the logarithm when using logarithmic scales.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > majorTimeUnitScale|Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale. Possible values are: Days, Months, Years.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > minorTimeUnitScale|Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale. Possible values are: Days, Months, Years.|1.8|
+|[chartAxis](../excel/chartaxis.md)|_Property_ > scaleType|Represents the value axis scale type. Possible values are: Linear, Logarithmic.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > showDisplayUnitLabel|Represents whether the axis display unit label is visible.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Property_ > type|Represents the axis type. Read-only. Possible values are: Invalid, Category, Value, SeriesAxis.|1.8|
 |[chartAxis](../excel/chartaxis.md)|_Method_ > [setCategoryNames(sourceData: Range)](../excel/chartaxis.md#setcategorynamessourcedata-range)|Sets all the category names for the specified axis.|1.8|
+|[chartAxis](../excel/chartaxis.md)|_Method_ > [setCustomDisplayUnit(value: double)](../excel/chartaxis.md#setcustomdisplayunitvalue-double)|Sets the axis display unit to a custom value.|1.8|
 |[chartBorder](../excel/chartborder.md)|_Method_ > [clear()](../excel/chartborder.md#clear)|Clear the border color of a chart element.|1.8|
 |[chartBorder](../excel/chartborder.md)|_Method_ > [setSolidColor(color: string)](../excel/chartborder.md#setsolidcolorcolor-string)|Sets the border formatting of a chart element to a uniform color.|1.8|
 |[chartFormatString](../excel/chartformatstring.md)|_Relationship_ > font|Represents the font attributes, such as font name, font size, color, etc. of chart characters object. Read-only.|1.8|
