@@ -26,7 +26,7 @@
       "enumNameJs": "Excel.ChartType",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -50,7 +50,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -62,7 +62,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -74,7 +74,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -86,7 +86,7 @@
       "enumNameJs": "Excel.ChartMarkerStyle",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
