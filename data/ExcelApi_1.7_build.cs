@@ -3523,7 +3523,7 @@ namespace Microsoft.ExcelServices
 		/// <summary>
 		/// Represents the chart type of a series. See Excel.ChartType for details.
 		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_ChartType)]
 		ChartType ChartType { get; set; }
 
@@ -3538,28 +3538,28 @@ namespace Microsoft.ExcelServices
 		/// <summary>
 		/// Boolean value representing if the series has data labels or not.
 		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_HasDataLabels)]
 		bool? HasDataLabels { get; set; }
 
 		/// <summary>
 		/// Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Filtered)]
 		bool Filtered { get; set; }
 
 		/// <summary>
 		/// Represents marker size of a chart series.
 		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerSize)]
 		int MarkerSize { get; set; }
 
 		/// <summary>
 		/// Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ApiSet(Version = 1.8)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerStyle)]
 		ChartMarkerStyle MarkerStyle { get; set; }
 
