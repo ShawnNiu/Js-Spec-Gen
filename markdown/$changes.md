@@ -26,6 +26,11 @@
 |[chartPointFormat](../excel/chartpointformat.md)|_Relationship_ > border|Represents the border format of a chart point, which includes border formating information. Read-only Read-only.|1.8|
 |[chartPointsCollection](../excel/chartpointscollection.md)|_Method_ > [getFirst()](../excel/chartpointscollection.md#getfirst)|Gets the first point in the series.|1.7|
 |[chartPointsCollection](../excel/chartpointscollection.md)|_Method_ > [getLast()](../excel/chartpointscollection.md#getlast)|Gets the last point in the series.|1.7|
+|[chartSeries](../excel/chartseries.md)|_Property_ > chartType|Represents the chart type of a series. Possible values are: ColumnClustered, ColumnStacked, ColumnStacked100, BarClustered, BarStacked, BarStacked100, LineStacked, LineStacked100, LineMarkers, LineMarkersStacked, LineMarkersStacked100, PieOfPie, etc..|ApiSet.InProgressFeatures.ChartingAPI|
+|[chartSeries](../excel/chartseries.md)|_Property_ > filtered|Boolean value representing if the series is filtered or not. Not applicable for surface charts.|ApiSet.InProgressFeatures.ChartingAPI|
+|[chartSeries](../excel/chartseries.md)|_Property_ > hasDataLabels|Boolean value representing if the series has data labels or not.|ApiSet.InProgressFeatures.ChartingAPI|
+|[chartSeries](../excel/chartseries.md)|_Property_ > markerSize|Represents marker size of a chart series.|ApiSet.InProgressFeatures.ChartingAPI|
+|[chartSeries](../excel/chartseries.md)|_Property_ > markerStyle|Represents marker style of a chart series. Possible values are: Automatic, None, Square, Diamond, Triangle, X, Star, Dot, Dash, Circle, Plus, Picture.|ApiSet.InProgressFeatures.ChartingAPI|
 |[chartSeries](../excel/chartseries.md)|_Relationship_ > trendlines|Represents a collection of Trendlines in the series. Read-only.|1.8|
 |[chartSeries](../excel/chartseries.md)|_Method_ > [delete()](../excel/chartseries.md#delete)|Deletes the chart series.|1.8|
 |[chartSeries](../excel/chartseries.md)|_Method_ > [setBubbleSizes(sourceData: Range)](../excel/chartseries.md#setbubblesizessourcedata-range)|Set bubble sizes for a chart series. Only works for bubble charts.|1.8|

@@ -6,6 +6,11 @@ Represents a series in a chart.
 
 | Property	   | Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
+|chartType|string|Represents the chart type of a series. Possible values are: ColumnClustered, ColumnStacked, ColumnStacked100, BarClustered, BarStacked, BarStacked100, LineStacked, LineStacked100, LineMarkers, LineMarkersStacked, LineMarkersStacked100, PieOfPie, etc..|[ApiSet.InProgressFeatures.ChartingAPI](../requirement-sets/excel-api-requirement-sets.md)|
+|filtered|bool|Boolean value representing if the series is filtered or not. Not applicable for surface charts.|[ApiSet.InProgressFeatures.ChartingAPI](../requirement-sets/excel-api-requirement-sets.md)|
+|hasDataLabels|bool|Boolean value representing if the series has data labels or not.|[ApiSet.InProgressFeatures.ChartingAPI](../requirement-sets/excel-api-requirement-sets.md)|
+|markerSize|int|Represents marker size of a chart series.|[ApiSet.InProgressFeatures.ChartingAPI](../requirement-sets/excel-api-requirement-sets.md)|
+|markerStyle|string|Represents marker style of a chart series. Possible values are: Automatic, None, Square, Diamond, Triangle, X, Star, Dot, Dash, Circle, Plus, Picture.|[ApiSet.InProgressFeatures.ChartingAPI](../requirement-sets/excel-api-requirement-sets.md)|
 |name|string|Represents the name of a series in a chart.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 
 _See property access [examples.](#property-access-examples)_

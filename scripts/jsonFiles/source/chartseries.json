@@ -19,6 +19,18 @@
   },
   "properties": [
     {
+      "name": "chartType",
+      "dataType": "string",
+      "description": "Represents the chart type of a series.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartType",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "isKey": null,
+      "notes": null
+    },
+    {
       "name": "format",
       "dataType": "ChartSeriesFormat",
       "description": "Represents the formatting of a chart series, which includes fill and line formatting.",
@@ -27,6 +39,54 @@
       "isCollection": false,
       "isRelationship": true,
       "reqSet": "1.1",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "hasDataLabels",
+      "dataType": "bool",
+      "description": "Boolean value representing if the series has data labels or not.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "filtered",
+      "dataType": "bool",
+      "description": "Boolean value representing if the series is filtered or not. Not applicable for surface charts.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "markerSize",
+      "dataType": "int",
+      "description": "Represents marker size of a chart series.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "markerStyle",
+      "dataType": "string",
+      "description": "Represents marker style of a chart series.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartMarkerStyle",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI",
       "isKey": null,
       "notes": null
     },
