@@ -13,6 +13,11 @@
 |[chartBorder](../excel/chartborder.md)|_Method_ > [clear()](../excel/chartborder.md#clear)|Clear the border color of a chart element.|1.8|
 |[chartBorder](../excel/chartborder.md)|_Method_ > [setSolidColor(color: string)](../excel/chartborder.md#setsolidcolorcolor-string)|Sets the border formatting of a chart element to a uniform color.|1.8|
 |[chartFormatString](../excel/chartformatstring.md)|_Relationship_ > font|Represents the font attributes, such as font name, font size, color, etc. of chart characters object. Read-only.|1.8|
+|[chartLegend](../excel/chartlegend.md)|_Property_ > hasShadow|Represents if the legend has shadow on the chart.|1.8|
+|[chartLegend](../excel/chartlegend.md)|_Property_ > height|Represents the height of the legend on the chart.|1.8|
+|[chartLegend](../excel/chartlegend.md)|_Property_ > left|Represents the left of a chart legend.|1.8|
+|[chartLegend](../excel/chartlegend.md)|_Property_ > top|Represents the top of a chart legend.|1.8|
+|[chartLegend](../excel/chartlegend.md)|_Property_ > width|Represents the width of the legend on the chart.|1.8|
 |[chartPointFormat](../excel/chartpointformat.md)|_Relationship_ > border|Represents the border format of a chart point, which includes border formating information. Read-only Read-only.|1.8|
 |[chartPointsCollection](../excel/chartpointscollection.md)|_Method_ > [getFirst()](../excel/chartpointscollection.md#getfirst)|Gets the first point in the series.|1.7|
 |[chartPointsCollection](../excel/chartpointscollection.md)|_Method_ > [getLast()](../excel/chartpointscollection.md#getlast)|Gets the last point in the series.|1.7|

@@ -14,10 +14,10 @@ require 'FileUtils'
 	Dir.mkdir(LOG_FOLDER) unless File.exists?(LOG_FOLDER)
 
 	if File.exists?("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-		File.delete("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+		#File.delete("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
 	end
-	@logger = Logger.new("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
-	@logger.level = Logger::DEBUG
+	#@logger = Logger.new("#{LOG_FOLDER}/#{$PROGRAM_NAME.chomp('.rb')}.txt")
+	#@logger.level = Logger::DEBUG
 # End log file
 
 

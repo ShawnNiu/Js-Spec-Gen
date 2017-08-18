@@ -31,9 +31,45 @@
       "notes": null
     },
     {
-      "name": "visible",
+      "name": "hasShadow",
       "dataType": "bool",
-      "description": "A boolean value the represents the visibility of a ChartLegend object.",
+      "description": "Represents if the legend has shadow on the chart.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "height",
+      "dataType": "double",
+      "description": "Represents the height of the legend on the chart.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "left",
+      "dataType": "double",
+      "description": "Represents the left of a chart legend.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "overlay",
+      "dataType": "bool",
+      "description": "Boolean value for whether the chart legend should overlap with the main body of the chart.",
       "isReadOnly": false,
       "enumNameJs": null,
       "isCollection": false,
@@ -55,14 +91,38 @@
       "notes": null
     },
     {
-      "name": "overlay",
+      "name": "top",
+      "dataType": "double",
+      "description": "Represents the top of a chart legend.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "visible",
       "dataType": "bool",
-      "description": "Boolean value for whether the chart legend should overlap with the main body of the chart.",
+      "description": "A boolean value the represents the visibility of a ChartLegend object.",
       "isReadOnly": false,
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
       "reqSet": "1.1",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "width",
+      "dataType": "double",
+      "description": "Represents the width of the legend on the chart.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     }
