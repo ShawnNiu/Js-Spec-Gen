@@ -14,8 +14,8 @@ None
 
 | Method		   | Return Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
-|[clear()](#clear)|void|Clear the border color of a chart element.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
-|[setSolidColor(color: string)](#setsolidcolorcolor-string)|void|Sets the border formatting of a chart element to a uniform color.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
+|[clear()](#clear)|void|Clear the border color of a chart element.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+|[setSolidColor(color: string)](#setsolidcolorcolor-string)|void|Sets the border formatting of a chart element to a uniform color.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Method Details
 

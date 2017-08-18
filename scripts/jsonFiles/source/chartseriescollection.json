@@ -73,7 +73,7 @@
           "notes": null
         }
       ],
-      "reqSet": "1.9"
+      "reqSet": "1.8"
     },
     {
       "name": "getCount",

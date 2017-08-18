@@ -62,7 +62,7 @@
       "enumNameJs": null,
       "isCollection": true,
       "isRelationship": true,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     }
@@ -78,7 +78,7 @@
       "notes": null,
       "httpSuccessResponse": null,
       "parameters": null,
-      "reqSet": "1.9"
+      "reqSet": "1.8"
     },
     {
       "name": "setXAxisValues",
@@ -100,7 +100,7 @@
           "notes": null
         }
       ],
-      "reqSet": "1.9"
+      "reqSet": "1.8"
     },
     {
       "name": "setValues",
@@ -122,7 +122,7 @@
           "notes": null
         }
       ],
-      "reqSet": "1.9"
+      "reqSet": "1.8"
     },
     {
       "name": "setBubbleSizes",
@@ -144,7 +144,7 @@
           "notes": null
         }
       ],
-      "reqSet": "1.9"
+      "reqSet": "1.8"
     }
   ]
 }

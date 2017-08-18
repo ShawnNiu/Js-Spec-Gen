@@ -6,7 +6,7 @@ Represents a collection of Chart Trendlines.
 
 | Property	   | Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
-|items|[ChartTrendline[]](charttrendline.md)|A collection of chartTrendline objects. Read-only.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
+|items|[ChartTrendline[]](charttrendline.md)|A collection of chartTrendline objects. Read-only.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 
 _See property access [examples.](#property-access-examples)_
 
@@ -18,8 +18,8 @@ None
 
 | Method		   | Return Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
-|[add(type: string)](#addtype-string)|[ChartTrendline](charttrendline.md)|Adds a new trendline to trendline collection.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
-|[getCount()](#getcount)|int|Returns the number of trendlines in the collection.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
+|[add(type: string)](#addtype-string)|[ChartTrendline](charttrendline.md)|Adds a new trendline to trendline collection.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+|[getCount()](#getcount)|int|Returns the number of trendlines in the collection.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Method Details
 

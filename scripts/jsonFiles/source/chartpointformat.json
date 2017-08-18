@@ -38,7 +38,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": true,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     }
