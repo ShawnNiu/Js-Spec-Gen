@@ -15,16 +15,16 @@ _See property access [examples.](#property-access-examples)_
 |:---------------|:--------|:----------|:----|
 |format|[ChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
 |points|[ChartPointsCollection](chartpointscollection.md)|Represents a collection of all points in the series. Read-only.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
-|trendlines|[ChartTrendlineCollection](charttrendlinecollection.md)|Represents a collection of Trendlines in the series. Read-only.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
+|trendlines|[ChartTrendlineCollection](charttrendlinecollection.md)|Represents a collection of Trendlines in the series. Read-only.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Methods
 
 | Method		   | Return Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
-|[delete()](#delete)|void|Deletes the chart series.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
-|[setBubbleSizes(sourceData: Range)](#setbubblesizessourcedata-range)|void|Set bubble sizes for a chart series. Only works for bubble charts.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
-|[setValues(sourceData: Range)](#setvaluessourcedata-range)|void|Set values for a chart series. For scatter chart, it means Y axis values.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
-|[setXAxisValues(sourceData: Range)](#setxaxisvaluessourcedata-range)|void|Set values of X axis for a chart series. Only works for scatter charts.|[1.9](../requirement-sets/excel-api-requirement-sets.md)|
+|[delete()](#delete)|void|Deletes the chart series.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+|[setBubbleSizes(sourceData: Range)](#setbubblesizessourcedata-range)|void|Set bubble sizes for a chart series. Only works for bubble charts.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+|[setValues(sourceData: Range)](#setvaluessourcedata-range)|void|Set values for a chart series. For scatter chart, it means Y axis values.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+|[setXAxisValues(sourceData: Range)](#setxaxisvaluessourcedata-range)|void|Set values of X axis for a chart series. Only works for scatter charts.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Method Details
 

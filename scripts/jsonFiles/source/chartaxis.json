@@ -122,7 +122,7 @@
       "enumNameJs": "Excel.ChartAxisDisplayUnit",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -134,7 +134,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -146,7 +146,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -158,7 +158,7 @@
       "enumNameJs": "Excel.AxisType",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -170,7 +170,7 @@
       "enumNameJs": "Excel.ChartAxisTimeUnit",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -182,7 +182,7 @@
       "enumNameJs": "Excel.ChartAxisTimeUnit",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -194,7 +194,7 @@
       "enumNameJs": "Excel.ChartAxisTimeUnit",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     },
@@ -206,7 +206,7 @@
       "enumNameJs": "Excel.ChartAxisCategoryType",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.9",
+      "reqSet": "1.8",
       "isKey": null,
       "notes": null
     }
@@ -232,7 +232,7 @@
           "notes": null
         }
       ],
-      "reqSet": "1.9"
+      "reqSet": "1.8"
     }
   ]
 }
