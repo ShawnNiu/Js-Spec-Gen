@@ -3161,6 +3161,11 @@ namespace Microsoft.ExcelServices
 		internal const int ChartSeries_SetValues = 7;
 		internal const int ChartSeries_SetBubbleSizes = 8;
 		internal const int ChartSeries_Trendlines = 9;
+		internal const int ChartSeries_ChartType = 10;
+		internal const int ChartSeries_HasDataLabels = 11;
+		internal const int ChartSeries_Filtered = 12;
+		internal const int ChartSeries_MarkerSize = 13;
+		internal const int ChartSeries_MarkerStyle = 14;
 
 		internal const int ChartSeriesFormat_Fill = 1;
 		internal const int ChartSeriesFormat_Line = 2;
@@ -3508,12 +3513,47 @@ namespace Microsoft.ExcelServices
 		void _OnAccess();
 
 		/// <summary>
+		/// Represents the chart type of a series. See Excel.ChartType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_ChartType)]
+		ChartType ChartType { get; set; }
+
+		/// <summary>
 		/// Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
 		/// </summary>
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Format)]
 		[JsonStringify()]
 		ChartSeriesFormat Format { get; }
+
+		/// <summary>
+		/// Boolean value representing if the series has data labels or not.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_HasDataLabels)]
+		bool? HasDataLabels { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Filtered)]
+		bool Filtered { get; set; }
+
+		/// <summary>
+		/// Represents marker size of a chart series.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerSize)]
+		int MarkerSize { get; set; }
+
+		/// <summary>
+		/// Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerStyle)]
+		ChartMarkerStyle MarkerStyle { get; set; }
 
 		/// <summary>
 		/// Represents the name of a series in a chart.

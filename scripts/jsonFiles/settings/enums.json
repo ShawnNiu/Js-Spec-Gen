@@ -66,6 +66,20 @@
     "Corner": "",
     "Custom": ""
   },
+  "Excel.ChartMarkerStyle": {
+    "Automatic": "",
+    "None": "",
+    "Square": "",
+    "Diamond": "",
+    "Triangle": "",
+    "X": "",
+    "Star": "",
+    "Dot": "",
+    "Dash": "",
+    "Circle": "",
+    "Plus": "",
+    "Picture": ""
+  },
   "Excel.ChartSeriesBy": {
     "Auto": "",
     "Columns": "",
