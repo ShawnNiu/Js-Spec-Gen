@@ -69,12 +69,12 @@
     {
       "name": "horizontalAlignment",
       "dataType": "string",
-      "description": "Represents the horizontal alignment for the specified objec",
+      "description": "Represents the horizontal alignment for chart title.",
       "isReadOnly": false,
       "enumNameJs": "Excel.ChartTextHorizontalAlignment",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -86,7 +86,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -98,7 +98,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -110,7 +110,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -122,7 +122,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -134,7 +134,43 @@
       "enumNameJs": "Excel.ChartTextVerticalAlignment",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "textOrientation",
+      "dataType": "int",
+      "description": "Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "position",
+      "dataType": "string",
+      "description": "Represents the position of chart title.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartTitlePosition",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "showShadow",
+      "dataType": "bool",
+      "description": "Represents a boolean value that determines if the chart title has a shadow.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     }
@@ -143,9 +179,9 @@
     {
       "name": "getSubstring",
       "returnType": "ChartFormatString",
-      "description": "Get the characters of a chart title. Line break '\\n' also counts one charater.",
-      "syntax": "chartTitleObject.getSubstring(start, start);",
-      "signature": "getSubstring(start: number, start: number)",
+      "description": "Get the substring of a chart title. Line break '\\n' also counts one charater.",
+      "syntax": "chartTitleObject.getSubstring(start, length);",
+      "signature": "getSubstring(start: number, length: number)",
       "restfulName": "Substring",
       "notes": null,
       "httpSuccessResponse": null,
@@ -154,22 +190,22 @@
           "name": "start",
           "dataType": "number",
           "isCollection": false,
-          "description": "The start index of the sub string",
+          "description": "Start position of substring to be retrieved. Position start with 0.",
           "isRequired": true,
           "enumNameJs": null,
           "notes": null
         },
         {
-          "name": "start",
+          "name": "length",
           "dataType": "number",
           "isCollection": false,
-          "description": "The length of the sub string",
+          "description": "Length of substring to be retrieved.",
           "isRequired": true,
           "enumNameJs": null,
           "notes": null
         }
       ],
-      "reqSet": "1.8"
+      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI"
     },
     {
       "name": "setFormula",
@@ -185,13 +221,13 @@
           "name": "formula",
           "dataType": "string",
           "isCollection": false,
-          "description": "A string value present formula",
+          "description": " a string that present the formula to set ",
           "isRequired": true,
           "enumNameJs": null,
           "notes": null
         }
       ],
-      "reqSet": "1.8"
+      "reqSet": "1.7"
     }
   ]
 }

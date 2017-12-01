@@ -21,12 +21,12 @@
     {
       "name": "id",
       "dataType": "string",
-      "description": "Gets a chart based on its position in the collection.",
+      "description": "The unique id of chart.",
       "isReadOnly": true,
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.2",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -153,12 +153,24 @@
     {
       "name": "showAllFieldButtons",
       "dataType": "bool",
-      "description": "Returns or sets whether to display all field buttons on a PivotChart. ReadWrite.",
+      "description": "Represents whether to display all field buttons on a PivotChart.",
       "isReadOnly": false,
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "chartType",
+      "dataType": "string",
+      "description": "Represents the type of the chart.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartType",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },

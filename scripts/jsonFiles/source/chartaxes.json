@@ -70,7 +70,7 @@
           "name": "type",
           "dataType": "string",
           "isCollection": false,
-          "description": "type",
+          "description": "Specifies the axis type.",
           "isRequired": true,
           "enumNameJs": "Excel.AxisType",
           "notes": null
@@ -79,13 +79,13 @@
           "name": "group",
           "dataType": "string",
           "isCollection": false,
-          "description": "group",
+          "description": "Specifies the axis group.",
           "isRequired": false,
           "enumNameJs": "Excel.AxisGroup",
           "notes": null
         }
       ],
-      "reqSet": "1.8"
+      "reqSet": "1.7"
     }
   ]
 }

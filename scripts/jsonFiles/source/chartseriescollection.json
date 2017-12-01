@@ -73,7 +73,7 @@
           "notes": null
         }
       ],
-      "reqSet": "1.8"
+      "reqSet": "1.7"
     },
     {
       "name": "getCount",
@@ -90,7 +90,7 @@
     {
       "name": "getItemAt",
       "returnType": "ChartSeries",
-      "description": "Retrieves a series based on its position in the collection.c",
+      "description": "Retrieves a series based on its position in the collection.",
       "syntax": "chartSeriesCollectionObject.getItemAt(index);",
       "signature": "getItemAt(index: number)",
       "restfulName": "ItemAt",
@@ -119,7 +119,7 @@
       "notes": null,
       "httpSuccessResponse": null,
       "parameters": null,
-      "reqSet": "1.7"
+      "reqSet": "ApiSet.InProgressFeatures.GetFirstGetLast"
     },
     {
       "name": "getLast",
@@ -131,7 +131,7 @@
       "notes": null,
       "httpSuccessResponse": null,
       "parameters": null,
-      "reqSet": "1.7"
+      "reqSet": "ApiSet.InProgressFeatures.GetFirstGetLast"
     }
   ]
 }

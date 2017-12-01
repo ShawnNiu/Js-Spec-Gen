@@ -29,6 +29,30 @@
       "reqSet": "1.1",
       "isKey": null,
       "notes": null
+    },
+    {
+      "name": "lineStyle",
+      "dataType": "string",
+      "description": "Represents the line style.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartLineStyle",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "weight",
+      "dataType": "int",
+      "description": "Represents weight of the line, in points.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
     }
   ],
   "methods": [

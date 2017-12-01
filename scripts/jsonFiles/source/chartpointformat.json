@@ -33,12 +33,12 @@
     {
       "name": "border",
       "dataType": "ChartBorder",
-      "description": "Represents the border format of a chart point, which includes border formating information. Read-only",
+      "description": "Represents the border format of a chart data point, which includes color, style and weight information.",
       "isReadOnly": true,
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": true,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     }

@@ -41,6 +41,78 @@
       "reqSet": "1.1",
       "isKey": null,
       "notes": null
+    },
+    {
+      "name": "dataLabel",
+      "dataType": "ChartDataLabel",
+      "description": "Returns the data label of a chart point.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "hasDataLabel",
+      "dataType": "bool",
+      "description": "Represents whether a data point has datalabel. Not applicable for surface charts.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "markerSize",
+      "dataType": "int",
+      "description": "Represents marker size of data point.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "markerStyle",
+      "dataType": "string",
+      "description": "Represents marker style of a chart data point.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartMarkerStyle",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "markerBackgroundColor",
+      "dataType": "string",
+      "description": "HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "markerForegroundColor",
+      "dataType": "string",
+      "description": "HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
     }
   ],
   "methods": null

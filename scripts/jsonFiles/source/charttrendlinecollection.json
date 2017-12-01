@@ -6,7 +6,7 @@
   "restPath": null,
   "info": {
     "version": "1.1",
-    "reqSet": "1.8",
+    "reqSet": "1.7",
     "addinTypes": [
       "Excel"
     ],
@@ -26,24 +26,12 @@
       "enumNameJs": null,
       "isCollection": true,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     }
   ],
   "methods": [
-    {
-      "name": "getCount",
-      "returnType": "int",
-      "description": "Returns the number of trendlines in the collection.",
-      "syntax": "chartTrendlineCollectionObject.getCount();",
-      "signature": "getCount()",
-      "restfulName": "Count",
-      "notes": null,
-      "httpSuccessResponse": null,
-      "parameters": null,
-      "reqSet": "1.8"
-    },
     {
       "name": "add",
       "returnType": "ChartTrendline",
@@ -58,13 +46,47 @@
           "name": "type",
           "dataType": "string",
           "isCollection": false,
-          "description": "TrendlineType.",
+          "description": "Specifies the trendline type. The default value is \"Linear\".",
           "isRequired": false,
           "enumNameJs": "Excel.TrendlineType",
           "notes": null
         }
       ],
-      "reqSet": "1.8"
+      "reqSet": "1.7"
+    },
+    {
+      "name": "getCount",
+      "returnType": "int",
+      "description": "Returns the number of trendlines in the collection.",
+      "syntax": "chartTrendlineCollectionObject.getCount();",
+      "signature": "getCount()",
+      "restfulName": "Count",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": null,
+      "reqSet": "1.7"
+    },
+    {
+      "name": "getItem",
+      "returnType": "ChartTrendline",
+      "description": "Get trendline object by index, which is the insertion order in items array.",
+      "syntax": "chartTrendlineCollectionObject.getItem(index);",
+      "signature": "getItem(index: number)",
+      "restfulName": "Item",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": [
+        {
+          "name": "index",
+          "dataType": "number",
+          "isCollection": false,
+          "description": "Represents the insertion order in items array.",
+          "isRequired": true,
+          "enumNameJs": null,
+          "notes": null
+        }
+      ],
+      "reqSet": "1.7"
     }
   ]
 }

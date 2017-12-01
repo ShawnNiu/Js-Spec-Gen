@@ -1,12 +1,12 @@
 {
   "name": "ChartBorder",
-  "description": "Represents the border formatting for a chart element.",
+  "description": "Represents the border formatting of a chart element.",
   "isCollection": false,
   "collectionOf": null,
   "restPath": null,
   "info": {
     "version": "1.1",
-    "reqSet": "1.8",
+    "reqSet": "1.7",
     "addinTypes": [
       "Excel"
     ],
@@ -17,41 +17,43 @@
     "title": "Office JavaScript Add-in API",
     "description": "Office JavaScript Add-in API"
   },
-  "properties": null,
-  "methods": [
+  "properties": [
     {
-      "name": "clear",
-      "returnType": "void",
-      "description": "Clear the border color of a chart element.",
-      "syntax": "chartBorderObject.clear();",
-      "signature": "clear()",
-      "restfulName": "clear",
-      "notes": null,
-      "httpSuccessResponse": null,
-      "parameters": null,
-      "reqSet": "1.8"
+      "name": "color",
+      "dataType": "string",
+      "description": "HTML color code representing the color of borders in the chart.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
     },
     {
-      "name": "setSolidColor",
-      "returnType": "void",
-      "description": "Sets the border formatting of a chart element to a uniform color.",
-      "syntax": "chartBorderObject.setSolidColor(color);",
-      "signature": "setSolidColor(color: string)",
-      "restfulName": "setSolidColor",
-      "notes": null,
-      "httpSuccessResponse": null,
-      "parameters": [
-        {
-          "name": "color",
-          "dataType": "string",
-          "isCollection": false,
-          "description": "HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\").",
-          "isRequired": true,
-          "enumNameJs": null,
-          "notes": null
-        }
-      ],
-      "reqSet": "1.8"
+      "name": "lineStyle",
+      "dataType": "string",
+      "description": "Represents the line style of the border.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartLineStyle",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "weight",
+      "dataType": "int",
+      "description": "Represents weight of the border, in points.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
     }
-  ]
+  ],
+  "methods": null
 }

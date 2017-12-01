@@ -2990,7 +2990,7 @@ namespace Microsoft.ExcelServices
 #endregion Formats
 
 #region Charts
-	internal static class ChartDispatchIds
+internal static class ChartDispatchIds
 	{
 		internal const int ChartAxes_Category = 1;
 		internal const int ChartAxes_Series = 2;
@@ -3006,20 +3006,35 @@ namespace Microsoft.ExcelServices
 		internal const int ChartAxis_MinorUnit = 6;
 		internal const int ChartAxis_Title = 7;
 		internal const int ChartAxis_Format = 8;
-		internal const int ChartAxis_Type = 9;
-		internal const int ChartAxis_MinorTimeUnitScale = 10;
-		internal const int ChartAxis_MajorTimeUnitScale = 11;
-		internal const int ChartAxis_BaseTimeUnit = 12;
-		internal const int ChartAxis_SetCategoryNames = 13;
-		internal const int ChartAxis_CategoryType = 14;
-		internal const int ChartAxis_OnAccess = 15;
-		internal const int ChartAxis_DisplayUnit = 16;
-		internal const int ChartAxis_ShowDisplayUnitLabel = 17;
-		internal const int ChartAxis_CustomDisplayUnit = 18;
+		internal const int ChartAxis_DisplayUnit = 9;
+		internal const int ChartAxis_ShowDisplayUnitLabel = 10;
+		internal const int ChartAxis_CustomDisplayUnit = 11;
+		internal const int ChartAxis_Type = 12;
+		internal const int ChartAxis_MinorTimeUnitScale = 13;
+		internal const int ChartAxis_MajorTimeUnitScale = 14;
+		internal const int ChartAxis_BaseTimeUnit = 15;
+		internal const int ChartAxis_CategoryType = 16;
+		internal const int ChartAxis_SetCategoryNames = 17;
+		internal const int ChartAxis_OnAccess = 18;
 		internal const int ChartAxis_SetCustomDisplayUnit = 19;
 		internal const int ChartAxis_AxisGroup = 20;
 		internal const int ChartAxis_ScaleType = 21;
 		internal const int ChartAxis_LogBase = 22;
+		internal const int ChartAxis_Left = 23;
+		internal const int ChartAxis_Top = 24;
+		internal const int ChartAxis_Height = 25;
+		internal const int ChartAxis_Width = 26;
+		internal const int ChartAxis_ReversePlotOrder = 27;
+		internal const int ChartAxis_Crosses = 28;
+		internal const int ChartAxis_CrossesAt = 29;
+		internal const int ChartAxis_SetCrossesAt = 30;
+		internal const int ChartAxis_Visible = 31;
+		internal const int ChartAxis_AxisBetweenCategories = 32;
+		internal const int ChartAxis_MajorTickMark = 33;
+		internal const int ChartAxis_MinorTickMark = 34;
+		internal const int ChartAxis_TickMarkSpacing = 35;
+		internal const int ChartAxis_TickLabelPosition = 36;
+		internal const int ChartAxis_TickLabelSpacing = 37;
 
 		internal const int ChartAxisFormat_Font = 1;
 		internal const int ChartAxisFormat_Line = 2;
@@ -3052,10 +3067,17 @@ namespace Microsoft.ExcelServices
 		internal const int Chart_GetImage = 17;
 		internal const int Chart_Worksheet = 18;
 		internal const int Chart_ShowAllFieldButtons = 19;
+		internal const int Chart_ChartType = 20;
 
 		internal const int ChartAreaFormat_Fill = 1;
 		internal const int ChartAreaFormat_Font = 2;
 		internal const int ChartAreaFormat_OnAccess = 3;
+		internal const int ChartAreaFormat_Border = 4;
+
+		internal const int ChartBorder_Color = 1;
+		internal const int ChartBorder_LineStyle = 2;
+		internal const int ChartBorder_Weight = 3;
+		internal const int ChartBorder_OnAccess = 4;
 
 		internal const int ChartCollection_Add = 1;
 		internal const int ChartCollection_Count = 2;
@@ -3066,6 +3088,16 @@ namespace Microsoft.ExcelServices
 		internal const int ChartCollection_OnAccess = 7;
 		internal const int ChartCollection_GetItemOrNullObject = 8;
 		internal const int ChartCollection_GetCount = 9;
+
+		internal const int ChartDataLabel_Position = 1;
+		internal const int ChartDataLabel_ShowValue = 2;
+		internal const int ChartDataLabel_ShowSeriesName = 3;
+		internal const int ChartDataLabel_ShowCategoryName = 4;
+		internal const int ChartDataLabel_ShowLegendKey = 5;
+		internal const int ChartDataLabel_ShowPercentage = 6;
+		internal const int ChartDataLabel_ShowBubbleSize = 7;
+		internal const int ChartDataLabel_Separator = 8;
+		internal const int ChartDataLabel_OnAccess = 9;
 
 		internal const int ChartDataLabels_Position = 1;
 		internal const int ChartDataLabels_ShowValue = 2;
@@ -3085,10 +3117,6 @@ namespace Microsoft.ExcelServices
 		internal const int ChartFill_SolidColor = 1;
 		internal const int ChartFill_Clear = 2;
 		internal const int ChartFill_OnAccess = 3;
-
-		internal const int ChartBorder_SolidColor = 1;
-		internal const int ChartBorder_Clear = 2;
-		internal const int ChartBorder_OnAccess = 3;
 
 		internal const int ChartFont_Bold = 1;
 		internal const int ChartFont_Color = 2;
@@ -3110,11 +3138,19 @@ namespace Microsoft.ExcelServices
 		internal const int ChartLegend_Overlay = 3;
 		internal const int ChartLegend_Format = 4;
 		internal const int ChartLegend_OnAccess = 5;
-		internal const int ChartLegend_Left = 6;
-		internal const int ChartLegend_Top = 7;
-		internal const int ChartLegend_Width = 8;
-		internal const int ChartLegend_Height = 9;
-		internal const int ChartLegend_HasShadow = 10;
+		internal const int ChartLegend_LegendEntries = 6;
+		internal const int ChartLegend_Left = 7;
+		internal const int ChartLegend_Top = 8;
+		internal const int ChartLegend_Width = 9;
+		internal const int ChartLegend_Height = 10;
+		internal const int ChartLegend_ShowShadow = 11;
+
+		internal const int ChartLegendEntry_Visible= 1;
+		internal const int ChartLegendEntry_OnAccess= 2;
+
+		internal const int ChartLegendEntryCollection_GetCount = 1;
+		internal const int ChartLegendEntryCollection_GetItemAt = 2;
+		internal const int ChartLegendEntryCollection_OnAccess = 3;
 
 		internal const int ChartLegendFormat_Font = 1;
 		internal const int ChartLegendFormat_Fill = 2;
@@ -3123,6 +3159,8 @@ namespace Microsoft.ExcelServices
 		internal const int ChartLineFormat_Clear = 1;
 		internal const int ChartLineFormat_Color = 2;
 		internal const int ChartLineFormat_OnAccess = 3;
+		internal const int ChartLineFormat_LineStyle = 4;
+		internal const int ChartLineFormat_Weight = 5;
 
 		internal const int ChartTitle_Visible = 1;
 		internal const int ChartTitle_Text = 2;
@@ -3137,14 +3175,24 @@ namespace Microsoft.ExcelServices
 		internal const int ChartTitle_Height = 11;
 		internal const int ChartTitle_SetFormula = 12;
 		internal const int ChartTitle_VerticalAlignment = 13;
+		internal const int ChartTitle_TextOrientation = 14;
+		internal const int ChartTitle_Position = 15;
+		internal const int ChartTitle_ShowShadow = 16;
 
 		internal const int ChartTitleFormat_Font = 1;
 		internal const int ChartTitleFormat_Fill = 2;
 		internal const int ChartTitleFormat_OnAccess = 3;
+		internal const int ChartTitleFormat_Border = 4;
 
 		internal const int ChartPoint_Format = 1;
 		internal const int ChartPoint_Value = 2;
 		internal const int ChartPoint_OnAccess = 3;
+		internal const int ChartPoint_DataLabel = 4;
+		internal const int ChartPoint_HasDataLabel = 5;
+		internal const int ChartPoint_MarkerStyle = 6;
+		internal const int ChartPoint_MarkerSize = 7;
+		internal const int ChartPoint_MarkerBackgroundColor = 8;
+		internal const int ChartPoint_MarkerForegroundColor = 9;
 
 		internal const int ChartPointFormat_Fill = 1;
 		internal const int ChartPointFormat_OnAccess = 2;
@@ -3161,16 +3209,23 @@ namespace Microsoft.ExcelServices
 		internal const int ChartSeries_Points = 2;
 		internal const int ChartSeries_Format = 3;
 		internal const int ChartSeries_OnAccess = 4;
-		internal const int ChartSeries_Delete = 5;
-		internal const int ChartSeries_SetXAxisValues = 6;
-		internal const int ChartSeries_SetValues = 7;
-		internal const int ChartSeries_SetBubbleSizes = 8;
-		internal const int ChartSeries_Trendlines = 9;
+		internal const int ChartSeries_Trendlines = 5;
+		internal const int ChartSeries_Delete = 6;
+		internal const int ChartSeries_SetXAxisValues = 7;
+		internal const int ChartSeries_SetValues = 8;
+		internal const int ChartSeries_SetBubbleSizes = 9;
 		internal const int ChartSeries_ChartType = 10;
 		internal const int ChartSeries_HasDataLabels = 11;
 		internal const int ChartSeries_Filtered = 12;
 		internal const int ChartSeries_MarkerSize = 13;
 		internal const int ChartSeries_MarkerStyle = 14;
+		internal const int ChartSeries_ShowShadow = 15;
+		internal const int ChartSeries_MarkerBackgroundColor = 16;
+		internal const int ChartSeries_MarkerForegroundColor = 17;
+		internal const int ChartSeries_Smooth = 18;
+		internal const int ChartSeries_PlotOrder = 19;
+		internal const int ChartSeries_GapWidth = 20;
+		internal const int ChartSeries_DoughnutHoleSize = 21;
 
 		internal const int ChartSeriesFormat_Fill = 1;
 		internal const int ChartSeriesFormat_Line = 2;
@@ -3192,10 +3247,17 @@ namespace Microsoft.ExcelServices
 		internal const int ChartTrendline_Id = 6;
 		internal const int ChartTrendline_DisplayEquation = 7;
 		internal const int ChartTrendline_DisplayRSquared = 8;
+		internal const int ChartTrendline_Forward = 9;
+		internal const int ChartTrendline_Backward = 10;
+		internal const int ChartTrendline_Delete = 11;
+		internal const int ChartTrendline_Name = 12;
+		internal const int ChartTrendline_Intercept = 13;
 
 		internal const int ChartTrendlineCollection_OnAccess = 1;
 		internal const int ChartTrendlineCollection_GetCount = 2;
 		internal const int ChartTrendlineCollection_Add = 3;
+		internal const int ChartTrendlineCollection_Indexer = 4;
+
 
 		internal const int ChartTrendlineFormat_Line = 1;
 		internal const int ChartTrendlineFormat_OnAccess = 2;
@@ -3278,9 +3340,12 @@ namespace Microsoft.ExcelServices
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_OnAccess)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		void _OnAccess();
+
+		/// <summary>
+		/// The unique id of chart. Read-only.
+		/// </summary>
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_Id)]
-		[ClientCallableProperty(ExcludedFromClientLibrary = true)]
-		[ApiSet(Version = 1.2)]
+		[ApiSet(Version = 1.7)]
 		string Id { get; }
 
 		/// <summary>
@@ -3385,11 +3450,18 @@ namespace Microsoft.ExcelServices
 		double Width { get; set; }
 
 		/// <summary>
-		/// Returns or sets whether to display all field buttons on a PivotChart. Read/Write.
+		/// Represents whether to display all field buttons on a PivotChart.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowAllFieldButtons)]
 		bool? ShowAllFieldButtons { get; set; }
+
+		/// <summary>
+		/// Represents the type of the chart. See Excel.ChartType for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ChartType)]
+		ChartType? ChartType { get; set; }
 
 		/// <summary>
 		/// Encapsulates the format properties for the chart area. Read-only.
@@ -3445,6 +3517,14 @@ namespace Microsoft.ExcelServices
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAreaFormat_Font)]
 		[JsonStringify()]
 		ChartFont Font { get; }
+
+		/// <summary>
+		/// Represents the border format of chart area, which includes color, linestyle and weight. Read-only.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAreaFormat_Border)]
+		[JsonStringify()]
+		ChartBorder Border { get; }
 	}
 
 	/// <summary>
@@ -3470,7 +3550,7 @@ namespace Microsoft.ExcelServices
 		/// </summary>
 		/// <param name="name">Name of the series.</param>
 		/// <param name="index">Index value of the series to be added. Zero-indexed.</param>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_Add)]
 		ChartSeries Add([Optional] string name, [Optional] int? index);
 
@@ -3483,7 +3563,7 @@ namespace Microsoft.ExcelServices
 		int GetCount();
 
 		/// <summary>
-		/// Retrieves a series based on its position in the collection.c
+		/// Retrieves a series based on its position in the collection.
 		/// </summary>
 		/// <param name="index">Index value of the object to be retrieved. Zero-indexed.</param>
 		[ApiSet(Version = 1.1)]
@@ -3494,7 +3574,7 @@ namespace Microsoft.ExcelServices
 		/// <summary>
 		/// Gets the first series in the collection.
 		/// </summary>
-		[ApiSet(Version = 1.7)]
+		[ApiSet(Version = ApiSet.InProgressFeatures.GetFirstGetLast)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_First)]
 		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
 		ChartSeries GetFirst();
@@ -3502,17 +3582,17 @@ namespace Microsoft.ExcelServices
 		/// <summary>
 		/// Gets the last series in the collection.
 		/// </summary>
-		[ApiSet(Version = 1.7)]
+		[ApiSet(Version = ApiSet.InProgressFeatures.GetFirstGetLast)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_Last)]
 		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
 		ChartSeries GetLast();
-
 	}
 
 	/// <summary>
 	/// Represents a series in a chart.
 	/// </summary>
 	[ApiSet(Version = 1.1)]
+	[ClientCallableType(DeleteOperationName = "Delete")]
 	[ClientCallableComType(Name = "IChartSeries", InterfaceId = "54454749-3FDB-401D-B5E6-6667F7F80F11", CoClassName = "ChartSeries")]
 	public interface ChartSeries
 	{
@@ -3523,9 +3603,17 @@ namespace Microsoft.ExcelServices
 		/// <summary>
 		/// Represents the chart type of a series. See Excel.ChartType for details.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_ChartType)]
 		ChartType ChartType { get; set; }
+
+		/// <summary>
+		/// Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
+		/// Throws an invalid argument exception on invalid charts.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_DoughnutHoleSize)]
+		double? DoughnutHoleSize { get; set; }
 
 		/// <summary>
 		/// Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
@@ -3536,32 +3624,61 @@ namespace Microsoft.ExcelServices
 		ChartSeriesFormat Format { get; }
 
 		/// <summary>
+		/// Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
+		/// specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_GapWidth)]
+		double? GapWidth { get; set; }
+
+		/// <summary>
 		/// Boolean value representing if the series has data labels or not.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_HasDataLabels)]
 		bool? HasDataLabels { get; set; }
 
 		/// <summary>
 		/// Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Filtered)]
 		bool Filtered { get; set; }
 
 		/// <summary>
 		/// Represents marker size of a chart series.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerSize)]
 		int MarkerSize { get; set; }
 
 		/// <summary>
 		/// Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerStyle)]
 		ChartMarkerStyle MarkerStyle { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the series has shadow or not.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_ShowShadow)]
+		bool ShowShadow { get; set; }
+
+		/// <summary>
+		/// Represents markers background color of a chart series.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerBackgroundColor)]
+		string MarkerBackgroundColor { get; set; }
+
+		/// <summary>
+		/// Represents markers foreground color of a chart series.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_MarkerForegroundColor)]
+		string MarkerForegroundColor { get; set; }
 
 		/// <summary>
 		/// Represents the name of a series in a chart.
@@ -3571,23 +3688,39 @@ namespace Microsoft.ExcelServices
 		string Name { get; set; }
 
 		/// <summary>
+		/// Represents the plot order of a chart series within the chart group.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_PlotOrder)]
+		int PlotOrder { get; set; }
+
+		/// <summary>
 		/// Represents a collection of all points in the series. Read-only.
 		/// </summary>
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Points)]
+		[JsonStringify()]
 		ChartPointsCollection Points { get; }
 
 		/// <summary>
-		/// Represents a collection of Trendlines in the series. Read-only.
+		/// Boolean value representing if the series is smooth or not. Only for line and scatter charts.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Smooth)]
+		bool? Smooth { get; set; }
+
+		/// <summary>
+		/// Represents a collection of trendlines in the series. Read-only.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Trendlines)]
+		[JsonStringify()]
 		ChartTrendlineCollection Trendlines { get; }
 
 		/// <summary>
 		/// Deletes the chart series.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Delete)]
 		void Delete();
 
@@ -3595,7 +3728,7 @@ namespace Microsoft.ExcelServices
 		/// Set values of X axis for a chart series. Only works for scatter charts.
 		/// </summary>
 		/// <param name="sourceData">The Range object corresponding to the source data.</param>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_SetXAxisValues)]
 		void SetXAxisValues([TypeScriptType("Excel.Range")]object sourceData);
 
@@ -3603,7 +3736,7 @@ namespace Microsoft.ExcelServices
 		/// Set values for a chart series. For scatter chart, it means Y axis values.
 		/// </summary>
 		/// <param name="sourceData">The Range object corresponding to the source data.</param>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_SetValues)]
 		void SetValues([TypeScriptType("Excel.Range")]object sourceData);
 
@@ -3611,7 +3744,7 @@ namespace Microsoft.ExcelServices
 		/// Set bubble sizes for a chart series. Only works for bubble charts.
 		/// </summary>
 		/// <param name="sourceData">The Range object corresponding to the source data.</param>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_SetBubbleSizes)]
 		void SetBubbleSizes([TypeScriptType("Excel.Range")]object sourceData);
 	}
@@ -3722,6 +3855,49 @@ namespace Microsoft.ExcelServices
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPoint_Value)]
 		object Value { get; }
+
+		/// <summary>
+		/// Returns the data label of a chart point. Read-only.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[JsonStringify()]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPoint_DataLabel)]
+		ChartDataLabel DataLabel { get; }
+
+		/// <summary>
+		/// Represents whether a data point has datalabel. Not applicable for surface charts.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPoint_HasDataLabel)]
+		bool? HasDataLabel { get; set; }
+
+		/// <summary>
+		/// Represents marker size of data point.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPoint_MarkerSize)]
+		int MarkerSize { get; set; }
+
+		/// <summary>
+		/// Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPoint_MarkerStyle)]
+		ChartMarkerStyle MarkerStyle { get; set; }
+
+		/// <summary>
+		/// HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPoint_MarkerBackgroundColor)]
+		string MarkerBackgroundColor { get; set; }
+
+		/// <summary>
+		/// HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPoint_MarkerForegroundColor)]
+		string MarkerForegroundColor { get; set; }
 	}
 
 	/// <summary>
@@ -3739,15 +3915,16 @@ namespace Microsoft.ExcelServices
 		/// Represents the fill format of a chart, which includes background formating information. Read-only.
 		/// </summary>
 		[ApiSet(Version = 1.1)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAreaFormat_Fill)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPointFormat_Fill)]
 		[JsonStringify()]
 		ChartFill Fill { get; }
 
 		/// <summary>
-		/// Represents the border format of a chart point, which includes border formating information. Read-only
+		/// Represents the border format of a chart data point, which includes color, style and weight information. Read-only.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPointFormat_Border)]
+		[JsonStringify()]
 		ChartBorder Border { get; }
 	}
 
@@ -3789,9 +3966,9 @@ namespace Microsoft.ExcelServices
 		/// <summary>
 		/// Returns the specific axis identified by type and group.
 		/// </summary>
-		/// <param name="type">type</param>
-		/// <param name="group">group</param>
-		[ApiSet(Version = 1.8)]
+		/// <param name="type">Specifies the axis type. See Excel.ChartAxis for details.</param>
+		/// <param name="group">Specifies the axis group. See Excel.ChartAxis for details.</param>
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxes_GetItem)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		ChartAxis GetItem(AxisType type, [Optional] AxisGroup? group);
@@ -3807,6 +3984,20 @@ namespace Microsoft.ExcelServices
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_OnAccess)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		void _OnAccess();
+
+		/// <summary>
+		/// Returns or sets the base unit for the specified category axis.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_BaseTimeUnit)]
+		ChartAxisTimeUnit? BaseTimeUnit { get; set; }
+
+		/// <summary>
+		/// Returns or sets the category axis type.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CategoryType)]
+		ChartAxisCategoryType? CategoryType { get; set; }
 
 		/// <summary>
 		/// Represents the formatting of a chart object, which includes line and font formatting. Read-only.
@@ -3830,6 +4021,13 @@ namespace Microsoft.ExcelServices
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MajorUnit)]
 		object MajorUnit { get; set; }
+
+		/// <summary>
+		/// Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MajorTimeUnitScale)]
+		ChartAxisTimeUnit? MajorTimeUnitScale { get; set; }
 
 		/// <summary>
 		/// Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
@@ -3861,6 +4059,21 @@ namespace Microsoft.ExcelServices
 		object MinorUnit { get; set; }
 
 		/// <summary>
+		/// Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MinorTimeUnitScale)]
+		ChartAxisTimeUnit? MinorTimeUnitScale { get; set; }
+
+		/// <summary>
+		/// Sets all the category names for the specified axis.
+		/// </summary>
+		/// <param name="sourceData">The range of source data</param>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCategoryNames)]
+		void SetCategoryNames([TypeScriptType("Excel.Range")] object sourceData);
+
+		/// <summary>
 		/// Represents the axis title. Read-only.
 		/// </summary>
 		[ApiSet(Version = 1.1)]
@@ -3869,98 +4082,167 @@ namespace Microsoft.ExcelServices
 		ChartAxisTitle Title { get; }
 
 		/// <summary>
-		/// Represents the axis display unit. 
+		/// Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_DisplayUnit)]
-		ChartAxisDisplayUnit DisplayUnit { get; set; }
+		ChartAxisDisplayUnit? DisplayUnit { get; set; }
 
 		/// <summary>
-		/// Represents whether the axis display unit label is visible. 
+		/// Represents whether the axis display unit label is visible.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_ShowDisplayUnitLabel)]
-		bool ShowDisplayUnitLabel { get; set; }
+		bool? ShowDisplayUnitLabel { get; set; }
 
 		/// <summary>
 		/// Represents the custom axis display unit value. Read Only. To set this property, please use the SetCustomDisplayUnit(double) method.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CustomDisplayUnit)]
-		double CustomDisplayUnit { get; }
+		double? CustomDisplayUnit { get; }
 
 		/// <summary>
 		/// Sets the axis display unit to a custom value.
 		/// </summary>
-		/// <param name="value">value.</param>
-		[ApiSet(Version = 1.8)]
+		/// <param name="value">The value of custom display unit</param>
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCustomDisplayUnit)]
 		void SetCustomDisplayUnit(double value);
 
 		/// <summary>
 		/// Represents the axis type. Read-only.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDcispatchIds.ChartAxis_Type)]
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Type)]
 		AxisType Type { get; }
 
 		/// <summary>
-		/// Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale. 
+		/// Represents the group for the specified axis. See Excel.AxisGroup for details.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MajorTimeUnitScale)]
-		ChartAxisTimeUnit MajorTimeUnitScale { get; set; }
-
-		/// <summary>
-		/// Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale. 
-		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MinorTimeUnitScale)]
-		ChartAxisTimeUnit MinorTimeUnitScale { get; set; }
-
-		/// <summary>
-		/// Returns or sets the base unit for the specified category axis.
-		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_BaseTimeUnit)]
-		ChartAxisTimeUnit BaseTimeUnit { get; set; }
-
-		/// <summary>
-		/// Sets all the category names for the specified axis.
-		/// </summary>
-		/// <param name="sourceData">The Range object corresponding to the source data.</param>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCategoryNames)]
-		void SetCategoryNames([TypeScriptType("Excel.Range")]object sourceData);
-
-		/// <summary>
-		/// Returns or sets the category axis type.
-		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CategoryType)]
-		ChartAxisCategoryType CategoryType { get; set; }
-
-		
-		/// <summary>
-		/// Represents the group for the specified axis.
-		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_AxisGroup)]
 		AxisGroup AxisGroup { get; }
 
 		/// <summary>
-		/// Represents the value axis scale type.
+		/// Represents the value axis scale type. See Excel.AxisScaleType for details.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_ScaleType)]
 		AxisScaleType? ScaleType { get; set; }
 
 		/// <summary>
 		/// Represents the base of the logarithm when using logarithmic scales.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_LogBase)]
 		double? LogBase { get; set; }
+
+		/// <summary>
+		/// Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis's not visible.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Left)]
+		double? Left { get; }
+
+		/// <summary>
+		/// Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis's not visible.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Top)]
+		double? Top { get; }
+
+		/// <summary>
+		/// Represents the height, in points, of the chart axis. Null if the axis's not visible.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Height)]
+		double? Height { get; }
+
+		/// <summary>
+		/// Represents the width, in points, of the chart axis. Null if the axis's not visible.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Width)]
+		double? Width { get; }
+
+		/// <summary>
+		/// Represents whether Microsoft Excel plots data points from last to first.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_ReversePlotOrder)]
+		bool? ReversePlotOrder { get; set; }
+
+		/// <summary>
+		/// Represents the specified axis where the other axis crosses. See Excel.AxisCrosses for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Crosses)]
+		AxisCrosses? Crosses { get; set; }
+
+		/// <summary>
+		/// Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CrossesAt)]
+		double? CrossesAt { get; }
+
+		/// <summary>
+		/// Set the specified axis where the other axis crosses at.
+		/// </summary>
+		/// <param name="value">The value of custom crosses</param>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCrossesAt)]
+		void SetCrossesAt(double value);
+
+		/// <summary>
+		/// A boolean value represents the visibility of the axis.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Visible)]
+		bool Visible { get; set; }
+
+		/// <summary>
+		/// Represents whether value axis crosses the category axis between categories.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_AxisBetweenCategories)]
+		bool? AxisBetweenCategories { get; set; }
+
+		/// <summary>
+		/// Represents the type of major tick mark for the specified axis. See Excel.AxisTickMark for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MajorTickMark)]
+		AxisTickMark MajorTickMark { get; set; }
+
+		/// <summary>
+		/// Represents the type of minor tick mark for the specified axis. See Excel.AxisTickMark for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MinorTickMark)]
+		AxisTickMark MinorTickMark { get; set; }
+
+		/// <summary>
+		/// Represents the number of categories or series between tick marks.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_TickMarkSpacing)]
+		int? TickMarkSpacing { get; set; }
+
+		/// <summary>
+		/// Represents the position of tick-mark labels on the specified axis. See Excel.AxisTickLabelPosition for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_TickLabelPosition)]
+		AxisTickLabelPosition TickLabelPosition { get; set; }
+
+		/// <summary>
+		/// Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_TickLabelSpacing)]
+		object TickLabelSpacing { get; set; }
 	}
 
 	/// <summary>
@@ -4122,6 +4404,74 @@ namespace Microsoft.ExcelServices
 	}
 
 	/// <summary>
+	/// Represents the data label of a chart point.
+	/// </summary>
+	[ApiSet(Version = 1.7)]
+	[ClientCallableComType(Name = "IChartDataLabel", InterfaceId = "9fe05b7b-dd28-489d-aab5-7497e4d5c347", CoClassName = "ChartDataLabel")]
+	public interface ChartDataLabel
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Position)]
+		ChartDataLabelPosition? Position { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the data label value is visible or not.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_ShowValue)]
+		bool? ShowValue { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the data label series name is visible or not.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_ShowSeriesName)]
+		bool? ShowSeriesName { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the data label category name is visible or not.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_ShowCategoryName)]
+		bool? ShowCategoryName { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the data label legend key is visible or not.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_ShowLegendKey)]
+		bool? ShowLegendKey { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the data label percentage is visible or not.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_ShowPercentage)]
+		bool? ShowPercentage { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the data label bubble size is visible or not.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_ShowBubbleSize)]
+		bool? ShowBubbleSize { get; set; }
+
+		/// <summary>
+		/// String representing the separator used for the data label on a chart.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Separator)]
+		string Separator { get; set; }
+	}
+
+	/// <summary>
 	/// Encapsulates the format properties for the chart data labels.
 	/// </summary>
 	[ApiSet(Version = 1.1)]
@@ -4202,7 +4552,7 @@ namespace Microsoft.ExcelServices
 	/// </summary>
 	[ApiSet(Version = 1.1)]
 	[ClientCallableComType(Name = "IChartLegend", InterfaceId = "a5c915bf-d752-4b33-95e0-5f84c6e9a46a", CoClassName = "ChartLegend")]
-public interface ChartLegend
+	public interface ChartLegend
 	{
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_OnAccess)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
@@ -4217,23 +4567,31 @@ public interface ChartLegend
 		ChartLegendFormat Format { get; }
 
 		/// <summary>
+		/// Represents a collection of legendEntries in the legend. Read-only.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_LegendEntries)]
+		[JsonStringify()]
+		ChartLegendEntryCollection LegendEntries { get; }
+
+		/// <summary>
 		/// Represents if the legend has shadow on the chart.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_HasShadow)]
-		bool? HasShadow { get; set; }
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_ShowShadow)]
+		bool? ShowShadow { get; set; }
 
 		/// <summary>
 		/// Represents the height of the legend on the chart.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Height)]
 		double? Height { get; set; }
 
 		/// <summary>
 		/// Represents the left of a chart legend.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Left)]
 		double? Left { get; set; }
 
@@ -4254,7 +4612,7 @@ public interface ChartLegend
 		/// <summary>
 		/// Represents the top of a chart legend.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Top)]
 		double? Top { get; set; }
 
@@ -4268,9 +4626,57 @@ public interface ChartLegend
 		/// <summary>
 		/// Represents the width of the legend on the chart.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegend_Width)]
 		double? Width { get; set; }
+	}
+
+	/// <summary>
+	/// Represents the legendEntry in legendEntryCollection.
+	/// </summary>
+	[ApiSet(Version = 1.7)]
+	[ClientCallableComType(Name = "IChartLegendEntry", InterfaceId = "a5c913bf-d752-4b33-95e0-5f84c6e9a46a", CoClassName = "ChartLegendEntry")]
+	public interface ChartLegendEntry
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Represents the visible of a chart legend entry.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_Visible)]
+		bool Visible { get; set; }
+	}
+
+	/// <summary>
+	/// Represents a collection of legendEntries.
+	/// </summary>
+	[ApiSet(Version = 1.7)]
+	[ClientCallableComType(Name = "IChartLegendEntryCollection", InterfaceId = "E1291097-2B13-414B-AC8D-5C2CD460BCEF", CoClassName = "ChartLegendEntryCollection")]
+	public interface ChartLegendEntryCollection : IEnumerable<ChartLegendEntry>
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntryCollection_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Returns the number of legendEntry in the collection.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntryCollection_GetCount)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		int GetCount();
+
+		/// <summary>
+		/// Returns a legendEntry at the given index.
+		/// </summary>
+		/// <param name="index">Index of the legendEntry to be retrieved.</param>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntryCollection_GetItemAt)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		ChartLegendEntry GetItemAt(int index);
 	}
 
 	/// <summary>
@@ -4342,64 +4748,85 @@ public interface ChartLegend
 		bool Visible { get; set; }
 
 		/// <summary>
-		/// Get the characters of a chart title. Line break '\n' also counts one charater.
+		/// Get the substring of a chart title. Line break '\n' also counts one charater.
 		/// </summary>
-		/// <param name="start">The start index of the sub string</param>
-		/// <param name="start">The length of the sub string</param>
-		[ApiSet(Version = 1.8)]
+		/// <param name="start">Start position of substring to be retrieved. Position start with 0.</param>
+		/// <param name="length">Length of substring to be retrieved.</param>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_GetSubstring)]
-		[ClientCallableOperation(OperationType = OperationType.Read)]
+		[ClientCallableOperation(OperationType = OperationType.Read, RESTfulName = "Substring")]
 		ChartFormatString GetSubstring(int start, int length);
 
 		/// <summary>
-		/// Represents the horizontal alignment for the specified objec
+		/// Represents the horizontal alignment for chart title.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_HorizontalAlignment)]
 		ChartTextHorizontalAlignment? HorizontalAlignment { get; set; }
 
 		/// <summary>
 		/// Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title's not visible.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Top)]
 		double? Top { get; set; }
 
 		/// <summary>
 		/// Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title's not visible.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Left)]
 		double? Left { get; set; }
 
 		/// <summary>
 		/// Returns the width, in points, of the chart title. Read-only. Null if chart title's not visible.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Width)]
 		double? Width { get; }
 
 		/// <summary>
 		/// Returns the height, in points, of the chart title. Read-only. Null if chart title's not visible.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Height)]
 		double? Height { get; }
 
 		/// <summary>
 		/// Sets a string value that represents the formula of chart title using A1-style notation.
 		/// </summary>
-		/// <param name="formula">A string value present formula</param>
-		[ApiSet(Version = 1.8)]
+		/// <param name="formula"> a string that present the formula to set </param>
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_SetFormula)]
 		void SetFormula(string formula);
 
 		/// <summary>
 		/// Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_VerticalAlignment)]
 		ChartTextVerticalAlignment? VerticalAlignment { get; set; }
+
+		/// <summary>
+		/// Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_TextOrientation)]
+		int? TextOrientation { get; set; }
+
+		/// <summary>
+		/// Represents the position of chart title. See Excel.ChartTitlePosition for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_Position)]
+		ChartTitlePosition? Position { get; set; }
+
+		/// <summary>
+		/// Represents a boolean value that determines if the chart title has a shadow.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_ShowShadow)]
+		bool? ShowShadow { get; set; }
 	}
 
 	/// <summary>
@@ -4447,6 +4874,14 @@ public interface ChartLegend
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitleFormat_Fill)]
 		[JsonStringify()]
 		ChartFill Fill { get; }
+
+		/// <summary>
+		/// Represents the border format of chart title, which includes color, linestyle and weight. Read-only.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitleFormat_Border)]
+		[JsonStringify()]
+		ChartBorder Border { get; }
 	}
 
 	/// <summary>
@@ -4477,9 +4912,9 @@ public interface ChartLegend
 	}
 
 	/// <summary>
-	/// Represents the border formatting for a chart element.
+	/// Represents the border formatting of a chart element.
 	/// </summary>
-	[ApiSet(Version = 1.8)]
+	[ApiSet(Version = 1.7)]
 	[ClientCallableComType(Name = "IChartBorder", InterfaceId = "acdf7ab0-69e6-4c93-9a52-74e16a42b36a", CoClassName="ChartBorder")]
 	public interface ChartBorder
 	{
@@ -4488,19 +4923,25 @@ public interface ChartLegend
 		void _OnAccess();
 
 		/// <summary>
-		/// Clear the border color of a chart element.
+		/// HTML color code representing the color of borders in the chart.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartBorder_Clear)]
-		void Clear();
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartBorder_Color)]
+		string Color { get; set; }
 
 		/// <summary>
-		/// Sets the border formatting of a chart element to a uniform color.
+		/// Represents the line style of the border. See Excel.ChartLineStyle for details.
 		/// </summary>
-		/// <param name="color">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</param>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartBorder_SolidColor)]
-		void SetSolidColor(string color);
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartBorder_LineStyle)]
+		ChartLineStyle LineStyle { get; set; }
+
+		/// <summary>
+		/// Represents weight of the border, in points.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartBorder_Weight)]
+		int Weight { get; set; }
 	}
 
 	/// <summary>
@@ -4527,7 +4968,22 @@ public interface ChartLegend
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLineFormat_Color)]
 		string Color { get; set; }
+
+		/// <summary>
+		/// Represents the line style. See Excel.ChartLineStyle for details.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLineFormat_LineStyle)]
+		ChartLineStyle LineStyle { get; set; }
+
+		/// <summary>
+		/// Represents weight of the line, in points.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLineFormat_Weight)]
+		int Weight { get; set; }
 	}
+
 
 	/// <summary>
 	/// This object represents the font attributes (font name, font size, color, etc.) for a chart object.
@@ -4586,7 +5042,8 @@ public interface ChartLegend
 	/// <summary>
 	/// This object represents the attributes for a chart trendline object.
 	/// </summary>
-	[ApiSet(Version = 1.8)]
+	[ApiSet(Version = 1.7)]
+	[ClientCallableType(DeleteOperationName = "Delete")]
 	[ClientCallableComType(Name = "IChartTrendline", InterfaceId = "B0AB4E90-1A7D-4BEF-897E-FEB990ABC4B7", CoClassName = "ChartTrendline")]
 	public interface ChartTrendline
 	{
@@ -4597,87 +5054,131 @@ public interface ChartLegend
 		/// <summary>
 		/// Represents the index of a chart trendline, index is the trendline's inserted order. Private. Read-only.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Id)]
 		int _Id { get; }
 
 		/// <summary>
+		/// Represents the number of periods that the trendline extends backward.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Backward)]
+		double? Backward { get; set; }
+
+		/// <summary>
+		/// Delete the trendline object.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Delete)]
+		void Delete();
+
+		/// <summary>
 		/// True if the equation for the trendline is displayed on the chart.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_DisplayEquation)]
 		bool? DisplayEquation { get; set; }
 
 		/// <summary>
 		/// True if the R-squared for the trendline is displayed on the chart.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_DisplayRSquared)]
 		bool? DisplayRSquared { get; set; }
 
 		/// <summary>
 		/// Represents the formatting of a chart trendline. Read-only.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Format)]
 		[JsonStringify()]
 		ChartTrendlineFormat Format { get; }
 
 		/// <summary>
-		/// Represents the type of a chart trendline.
+		/// Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic values). The returned value is always a number.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Type)]
-		TrendlineType Type { get; set; }
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Intercept)]
+		object Intercept { get; set; }
 
 		/// <summary>
-		/// Represents the PolynomialOrder of a chart trendline, specific for trendline with Polynomial type.
+		/// Represents the number of periods that the trendline extends forward.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Forward)]
+		double? Forward { get; set; }
+
+		/// <summary>
+		/// Represents the period of a chart trendline, only for trendline with MovingAverage type.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_MovingAveragePeriod)]
+		int? MovingAveragePeriod { get; set; }
+
+		/// <summary>
+		/// Represents the name of the trendline. Can be set to a string value, or can be set to null value represents automatic values. The returned value is always a string
+		/// </summary>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Name)]
+		string Name { get; set; }
+
+		/// <summary>
+		/// Represents the order of a chart trendline, only for trendline with Polynomial type.
+		/// </summary>
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_PolynomialOrder)]
 		int? PolynomialOrder { get; set; }
 
 		/// <summary>
-		/// Represents the MovingAveragePeriod of a chart trendline, specific for trendline with MovingAverage type.
+		/// Represents the type of a chart trendline.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_MovingAveragePeriod)]
-		int? MovingAveragePeriod { get; set; }
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Type)]
+		TrendlineType Type { get; set; }
 	}
 
 	/// <summary>
 	/// Represents a collection of Chart Trendlines.
 	/// </summary>
-	[ApiSet(Version = 1.8)]
-	[ClientCallableComType(Name = "IChartTrendlineCollection", InterfaceId = "E8291097-2B13-414B-AC8D-5C2CD460BCEF", CoClassName = "ChartTrendlineCollection")]
+	[ApiSet(Version = 1.7)]
+	[ClientCallableComType(Name = "IChartTrendlineCollection", InterfaceId = "E8291097-2B13-414B-AC8D-5C2CD460BCEF", CoClassName = "ChartTrendlineCollection", SupportEnumeration = true)]
 	public interface ChartTrendlineCollection : IEnumerable<ChartTrendline>
 	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineCollection_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Adds a new trendline to trendline collection.
+		/// </summary>
+		/// <param name="type">Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.</param>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineCollection_Add)]
+		ChartTrendline Add([Optional] TrendlineType? type);
+
 		/// <summary>
 		/// Returns the number of trendlines in the collection.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineCollection_GetCount)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		int GetCount();
 
 		/// <summary>
-		/// Adds a new trendline to trendline collection.
+		/// Get trendline object by index, which is the insertion order in items array.
 		/// </summary>
-		/// <param name="type">TrendlineType.</param>
-		[ApiSet(Version = 1.8)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineCollection_Add)]
-		ChartTrendline Add([Optional] TrendlineType type);
+		/// <param name="index">Represents the insertion order in items array.</param>
+		[ApiSet(Version = 1.7)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineCollection_Indexer)]
+		ChartTrendline this[int index] { get; }
 
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineCollection_OnAccess)]
-		[ClientCallableOperation(OperationType = OperationType.Read)]
-		void _OnAccess();
 	}
 
 
 	/// <summary>
 	/// Represents the format properties for chart trendline.
 	/// </summary>
-	[ApiSet(Version = 1.8)]
+	[ApiSet(Version = 1.7)]
 	[ClientCallableComType(Name = "IChartTrendlineFormat", InterfaceId = "DD906913-5D3B-4AC1-88ED-3F2DBC98CB03", CoClassName = "ChartTrendlineFormat")]
 	public interface ChartTrendlineFormat
 	{
@@ -4688,7 +5189,7 @@ public interface ChartLegend
 		/// <summary>
 		/// Represents chart line formatting. Read-only.
 		/// </summary>
-		[ApiSet(Version = 1.8)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineFormat_Line)]
 		[JsonStringify()]
 		ChartLineFormat Line { get; }

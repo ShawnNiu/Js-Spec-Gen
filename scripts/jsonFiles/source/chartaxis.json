@@ -19,6 +19,30 @@
   },
   "properties": [
     {
+      "name": "baseTimeUnit",
+      "dataType": "string",
+      "description": "Returns or sets the base unit for the specified category axis.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartAxisTimeUnit",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "categoryType",
+      "dataType": "string",
+      "description": "Returns or sets the category axis type.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartAxisCategoryType",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
       "name": "format",
       "dataType": "ChartAxisFormat",
       "description": "Represents the formatting of a chart object, which includes line and font formatting.",
@@ -51,6 +75,18 @@
       "isCollection": false,
       "isRelationship": false,
       "reqSet": "1.1",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "majorTimeUnitScale",
+      "dataType": "string",
+      "description": "Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartAxisTimeUnit",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -103,6 +139,18 @@
       "notes": null
     },
     {
+      "name": "minorTimeUnitScale",
+      "dataType": "string",
+      "description": "Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartAxisTimeUnit",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
       "name": "title",
       "dataType": "ChartAxisTitle",
       "description": "Represents the axis title.",
@@ -122,7 +170,7 @@
       "enumNameJs": "Excel.ChartAxisDisplayUnit",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -134,7 +182,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -146,7 +194,7 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -158,55 +206,7 @@
       "enumNameJs": "Excel.AxisType",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
-      "isKey": null,
-      "notes": null
-    },
-    {
-      "name": "majorTimeUnitScale",
-      "dataType": "string",
-      "description": "Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.",
-      "isReadOnly": false,
-      "enumNameJs": "Excel.ChartAxisTimeUnit",
-      "isCollection": false,
-      "isRelationship": false,
-      "reqSet": "1.8",
-      "isKey": null,
-      "notes": null
-    },
-    {
-      "name": "minorTimeUnitScale",
-      "dataType": "string",
-      "description": "Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.",
-      "isReadOnly": false,
-      "enumNameJs": "Excel.ChartAxisTimeUnit",
-      "isCollection": false,
-      "isRelationship": false,
-      "reqSet": "1.8",
-      "isKey": null,
-      "notes": null
-    },
-    {
-      "name": "baseTimeUnit",
-      "dataType": "string",
-      "description": "Returns or sets the base unit for the specified category axis.",
-      "isReadOnly": false,
-      "enumNameJs": "Excel.ChartAxisTimeUnit",
-      "isCollection": false,
-      "isRelationship": false,
-      "reqSet": "1.8",
-      "isKey": null,
-      "notes": null
-    },
-    {
-      "name": "categoryType",
-      "dataType": "string",
-      "description": "Returns or sets the category axis type.",
-      "isReadOnly": false,
-      "enumNameJs": "Excel.ChartAxisCategoryType",
-      "isCollection": false,
-      "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -218,7 +218,7 @@
       "enumNameJs": "Excel.AxisGroup",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -230,7 +230,7 @@
       "enumNameJs": "Excel.AxisScaleType",
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     },
@@ -242,34 +242,180 @@
       "enumNameJs": null,
       "isCollection": false,
       "isRelationship": false,
-      "reqSet": "1.8",
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "left",
+      "dataType": "double",
+      "description": "Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis's not visible.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "top",
+      "dataType": "double",
+      "description": "Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis's not visible.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "height",
+      "dataType": "double",
+      "description": "Represents the height, in points, of the chart axis. Null if the axis's not visible.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "width",
+      "dataType": "double",
+      "description": "Represents the width, in points, of the chart axis. Null if the axis's not visible.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "reversePlotOrder",
+      "dataType": "bool",
+      "description": "Represents whether Microsoft Excel plots data points from last to first.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "crosses",
+      "dataType": "string",
+      "description": "Represents the specified axis where the other axis crosses.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.AxisCrosses",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "crossesAt",
+      "dataType": "double",
+      "description": "Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "visible",
+      "dataType": "bool",
+      "description": "A boolean value represents the visibility of the axis.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "axisBetweenCategories",
+      "dataType": "bool",
+      "description": "Represents whether value axis crosses the category axis between categories.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "majorTickMark",
+      "dataType": "string",
+      "description": "Represents the type of major tick mark for the specified axis.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.AxisTickMark",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "minorTickMark",
+      "dataType": "string",
+      "description": "Represents the type of minor tick mark for the specified axis.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.AxisTickMark",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "tickMarkSpacing",
+      "dataType": "int",
+      "description": "Represents the number of categories or series between tick marks.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "tickLabelPosition",
+      "dataType": "string",
+      "description": "Represents the position of tick-mark labels on the specified axis.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.AxisTickLabelPosition",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "tickLabelSpacing",
+      "dataType": "object",
+      "description": "Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
       "isKey": null,
       "notes": null
     }
   ],
   "methods": [
-    {
-      "name": "setCustomDisplayUnit",
-      "returnType": "void",
-      "description": "Sets the axis display unit to a custom value.",
-      "syntax": "chartAxisObject.setCustomDisplayUnit(value);",
-      "signature": "setCustomDisplayUnit(value: double)",
-      "restfulName": "setCustomDisplayUnit",
-      "notes": null,
-      "httpSuccessResponse": null,
-      "parameters": [
-        {
-          "name": "value",
-          "dataType": "double",
-          "isCollection": false,
-          "description": "value.",
-          "isRequired": true,
-          "enumNameJs": null,
-          "notes": null
-        }
-      ],
-      "reqSet": "1.8"
-    },
     {
       "name": "setCategoryNames",
       "returnType": "void",
@@ -284,13 +430,57 @@
           "name": "sourceData",
           "dataType": "Range",
           "isCollection": false,
-          "description": "The Range object corresponding to the source data.",
+          "description": "The range of source data",
           "isRequired": true,
           "enumNameJs": null,
           "notes": null
         }
       ],
-      "reqSet": "1.8"
+      "reqSet": "1.7"
+    },
+    {
+      "name": "setCustomDisplayUnit",
+      "returnType": "void",
+      "description": "Sets the axis display unit to a custom value.",
+      "syntax": "chartAxisObject.setCustomDisplayUnit(value);",
+      "signature": "setCustomDisplayUnit(value: double)",
+      "restfulName": "setCustomDisplayUnit",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": [
+        {
+          "name": "value",
+          "dataType": "double",
+          "isCollection": false,
+          "description": "The value of custom display unit",
+          "isRequired": true,
+          "enumNameJs": null,
+          "notes": null
+        }
+      ],
+      "reqSet": "1.7"
+    },
+    {
+      "name": "setCrossesAt",
+      "returnType": "void",
+      "description": "Set the specified axis where the other axis crosses at.",
+      "syntax": "chartAxisObject.setCrossesAt(value);",
+      "signature": "setCrossesAt(value: double)",
+      "restfulName": "setCrossesAt",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": [
+        {
+          "name": "value",
+          "dataType": "double",
+          "isCollection": false,
+          "description": "The value of custom crosses",
+          "isRequired": true,
+          "enumNameJs": null,
+          "notes": null
+        }
+      ],
+      "reqSet": "1.7"
     }
   ]
 }
