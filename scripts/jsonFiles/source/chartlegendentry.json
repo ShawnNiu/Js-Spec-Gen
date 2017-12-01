@@ -1,0 +1,35 @@
+{
+  "name": "ChartLegendEntry",
+  "description": "Represents the legendEntry in legendEntryCollection.",
+  "isCollection": false,
+  "collectionOf": null,
+  "restPath": null,
+  "info": {
+    "version": "1.1",
+    "reqSet": "1.7",
+    "addinTypes": [
+      "Excel"
+    ],
+    "nameSpace": "Excel",
+    "addinHosts": [
+      "Task pane"
+    ],
+    "title": "Office JavaScript Add-in API",
+    "description": "Office JavaScript Add-in API"
+  },
+  "properties": [
+    {
+      "name": "visible",
+      "dataType": "bool",
+      "description": "Represents the visible of a chart legend entry.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.7",
+      "isKey": null,
+      "notes": null
+    }
+  ],
+  "methods": null
+}
