@@ -112,7 +112,7 @@ module SpecMaker
 			dataTypePlusLinkFull = prop[:dataType]
 		else
 			dataTypePlusLink = "[" + prop[:dataType] + "](" + prop[:dataType].downcase + ".md)"
-			dataTypePlusLinkFull = "[" + prop[:dataType] + "](../excel/" + prop[:dataType].downcase + ".md)"
+			dataTypePlusLinkFull = "[" + prop[:dataType] + "](../markdown/" + prop[:dataType].downcase + ".md)"
 		end
 
 		if prop[:isCollection]
@@ -126,7 +126,7 @@ module SpecMaker
 			if prop[:isRelationship]
 				whatType = 'Relationship'
 			end
-			@changes.push  (PIPE + "[#{@resource}](../excel/#{@resource.downcase}.md)"  + PIPE + "_#{whatType}_ > " + prop[:name] + PIPE + finalDesc + PIPE + prop[:reqSet] + PIPE +  NEWLINE)
+			@changes.push  (PIPE + "[#{@resource}](../markdown/#{@resource.downcase}.md)"  + PIPE + "_#{whatType}_ > " + prop[:name] + PIPE + finalDesc + PIPE + prop[:reqSet] + PIPE +  NEWLINE)
 
 			# @changes.push "**Resource name:** [#{@resource}](../excel/#{@resource.downcase}.md) </br>" + NEWLINE
 			# @changes.push "**What's new:** #{whatType} **#{prop[:name]}** of type **#{dataTypePlusLinkFull}** </br>" + NEWLINE
@@ -148,7 +148,7 @@ module SpecMaker
 			dataTypePlusLinkFull = method[:returnType]
 		else
 			dataTypePlusLink = "[" + method[:returnType] + "](" + method[:returnType].downcase + ".md)"
-			dataTypePlusLinkFull = "[" + method[:returnType] + "](../excel/" + method[:returnType].downcase + ".md)"
+			dataTypePlusLinkFull = "[" + method[:returnType] + "](../markdown/" + method[:returnType].downcase + ".md)"
 		end
 		# Add anchor links to method.
 		str = method[:signature].strip
@@ -156,12 +156,12 @@ module SpecMaker
 		replacements.each {|replacement| str.gsub!(replacement[0], replacement[1])}
 		methodPlusLink = "[" + method[:signature].strip + "](#" + str.downcase + ")"
 
-		methodPlusLinkFull = "[" + method[:signature].strip + "](" + "../excel/#{@resource.downcase}.md#" + str.downcase + ")"
+		methodPlusLinkFull = "[" + method[:signature].strip + "](" + "../markdown/#{@resource.downcase}.md#" + str.downcase + ")"
 
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE + "[#{method[:reqSet]}](../requirement-sets/#{HOST}-api-requirement-sets.md)" + PIPE + NEWLINE)
 
 		if !(PROD_REQUIREMENTS.include? method[:reqSet])
-			@changes.push (PIPE + "[#{@resource}](../excel/#{@resource.downcase}.md)" + PIPE + "_Method_ > " + methodPlusLinkFull  + PIPE + method[:description]  + PIPE + method[:reqSet] + PIPE + NEWLINE)
+			@changes.push (PIPE + "[#{@resource}](../markdown/#{@resource.downcase}.md)" + PIPE + "_Method_ > " + methodPlusLinkFull  + PIPE + method[:description]  + PIPE + method[:reqSet] + PIPE + NEWLINE)
 
 			# @changes.push "**Resource name:** [#{@resource}](../excel/#{@resource.downcase}.md) </br>" + NEWLINE
 			# @changes.push "**What's new:** Method **#{methodPlusLinkFull}** returning **#{dataTypePlusLinkFull}** </br>" + NEWLINE
