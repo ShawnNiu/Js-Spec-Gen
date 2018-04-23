@@ -25,7 +25,7 @@ module SpecMaker
 	HEADER5 = '##### '
 	GETTERSETTERLINK = '_See property access [examples.](#property-access-examples)_'
 	GETTERSETTER = 'Property access examples'
-	PROD_REQUIREMENTS = ['1.1', '1.2', '1.3', '1.4', '1.5', '1.6']
+	PROD_REQUIREMENTS = ['1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7']
 	BACKTOMETHOD = '[Back](#methods)'
 
 	BACKTOPROPERTY = NEWLINE + '[Back](#properties)'

@@ -3680,22 +3680,6 @@ internal static class ChartDispatchIds
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_ItemAt)]
 		[ClientCallableOperation(OperationType = OperationType.Read)]
 		ChartSeries GetItemAt(int index);
-
-		/// <summary>
-		/// Gets the first series in the collection.
-		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.GetFirstGetLast)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_First)]
-		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
-		ChartSeries GetFirst();
-
-		/// <summary>
-		/// Gets the last series in the collection.
-		/// </summary>
-		[ApiSet(Version = ApiSet.InProgressFeatures.GetFirstGetLast)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeriesCollection_Last)]
-		[ClientCallableOperation(OperationType = OperationType.Read, InvalidateReturnObjectPathAfterRequest = true)]
-		ChartSeries GetLast();
 	}
 
 	/// <summary>
