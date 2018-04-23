@@ -125,6 +125,78 @@
       "reqSet": "1.1",
       "isKey": null,
       "notes": null
+    },
+    {
+      "name": "autoText",
+      "dataType": "bool",
+      "description": "Represents whether data labels automatically generates appropriate text based on context.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "horizontalAlignment",
+      "dataType": "string",
+      "description": "Represents the horizontal alignment for chart data label.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartTextHorizontalAlignment",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "numberFormat",
+      "dataType": "string",
+      "description": "Represents the format code for data labels.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "numberFormatLinked",
+      "dataType": "bool",
+      "description": "Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "textOrientation",
+      "dataType": "int",
+      "description": "Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "verticalAlignment",
+      "dataType": "string",
+      "description": "Represents the vertical alignment of chart data label.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartTextVerticalAlignment",
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
     }
   ],
   "methods": null

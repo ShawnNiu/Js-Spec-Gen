@@ -45,116 +45,6 @@
     "Formats": "",
     "Contents": ""
   },
-  "Excel.ChartDataLabelPosition": {
-    "None": "",
-    "Center": "",
-    "InsideEnd": "",
-    "InsideBase": "",
-    "OutsideEnd": "",
-    "Left": "",
-    "Right": "",
-    "Top": "",
-    "Bottom": "",
-    "BestFit": "",
-    "Callout": ""
-  },
-  "Excel.ChartLegendPosition": {
-    "Top": "",
-    "Bottom": "",
-    "Left": "",
-    "Right": "",
-    "Corner": "",
-    "Custom": ""
-  },
-  "Excel.ChartMarkerStyle": {
-    "Automatic": "",
-    "None": "",
-    "Square": "",
-    "Diamond": "",
-    "Triangle": "",
-    "X": "",
-    "Star": "",
-    "Dot": "",
-    "Dash": "",
-    "Circle": "",
-    "Plus": "",
-    "Picture": ""
-  },
-  "Excel.ChartSeriesBy": {
-    "Auto": "",
-    "Columns": "",
-    "Rows": ""
-  },
-  "Excel.ChartType": {
-    "ColumnClustered": "",
-    "ColumnStacked": "",
-    "ColumnStacked100": "",
-    "BarClustered": "",
-    "BarStacked": "",
-    "BarStacked100": "",
-    "LineStacked": "",
-    "LineStacked100": "",
-    "LineMarkers": "",
-    "LineMarkersStacked": "",
-    "LineMarkersStacked100": "",
-    "PieOfPie": "",
-    "etc.": ""
-  },
-  "Excel.ChartUnderlineStyle": {
-    "None": "",
-    "Single": ""
-  },
-  "Excel.ChartTextHorizontalAlignment": {
-    "Center": "",
-    "Left": "",
-    "Right": "",
-    "Justify": "",
-    "Distributed": ""
-  },
-  "Excel.ChartTextVerticalAlignment": {
-    "Center": "",
-    "Bottom": "",
-    "Top": "",
-    "Justify": "",
-    "Distributed": ""
-  },
-  "Excel.ChartAxisDisplayUnit": {
-    "None": "",
-    "Hundreds": "",
-    "Thousands": "",
-    "TenThousands": "",
-    "HundredThousands": "",
-    "Millions": "",
-    "TenMillions": "",
-    "HundredMillons": "",
-    "Billions": "",
-    "Trillions": "",
-    "Custom": ""
-  },
-  "Excel.TrendlineType": {
-    "Linear": "",
-    "Expontential": "",
-    "Logarithmic": "",
-    "MovingAvg": "",
-    "Polynomial": "",
-    "Power": ""
-  },
-  "Excel.AxisType": {
-    "Invalid": "",
-    "Category": "",
-    "Value": "",
-    "SeriesAxis": ""
-  },
-  "Excel.ChartAxisTimeUnit": {
-    "Days": "",
-    "Months": "",
-    "Years": ""
-  },
-  "Excel.ChartAxisCategoryType": {
-    "Automatic": "",
-    "TextAxis": "",
-    "DateAxis": ""
-  },
   "Excel.DeleteShiftDirection": {
     "Up": "",
     "Left": ""
@@ -524,13 +414,152 @@
     "WorksheetDeactivated": "",
     "TableDataChanged": "",
     "TableSelectionChanged": ""
-	},
-	"Excel.AxisGroup":{
+  },
+  "Excel.ChartDataLabelPosition": {
+    "None": "",
+    "Center": "",
+    "InsideEnd": "",
+    "InsideBase": "",
+    "OutsideEnd": "",
+    "Left": "",
+    "Right": "",
+    "Top": "",
+    "Bottom": "",
+    "BestFit": "",
+    "Callout": ""
+  },
+  "Excel.ChartLegendPosition": {
+    "Top": "",
+    "Bottom": "",
+    "Left": "",
+    "Right": "",
+    "Corner": "",
+    "Custom": ""
+  },
+  "Excel.ChartMarkerStyle": {
+    "Automatic": "",
+    "None": "",
+    "Square": "",
+    "Diamond": "",
+    "Triangle": "",
+    "X": "",
+    "Star": "",
+    "Dot": "",
+    "Dash": "",
+    "Circle": "",
+    "Plus": "",
+    "Picture": ""
+  },
+  "Excel.ChartSeriesBy": {
+    "Auto": "",
+    "Columns": "",
+    "Rows": ""
+  },
+  "Excel.ChartType": {
+    "ColumnClustered": "",
+    "ColumnStacked": "",
+    "ColumnStacked100": "",
+    "BarClustered": "",
+    "BarStacked": "",
+    "BarStacked100": "",
+    "LineStacked": "",
+    "LineStacked100": "",
+    "LineMarkers": "",
+    "LineMarkersStacked": "",
+    "LineMarkersStacked100": "",
+    "PieOfPie": "",
+    "etc.": ""
+  },
+  "Excel.ChartUnderlineStyle": {
+    "None": "",
+    "Single": ""
+  },
+  "Excel.ChartTextHorizontalAlignment": {
+    "Center": "",
+    "Left": "",
+    "Right": "",
+    "Justify": "",
+    "Distributed": ""
+  },
+  "Excel.ChartTextVerticalAlignment": {
+    "Center": "",
+    "Bottom": "",
+    "Top": "",
+    "Justify": "",
+    "Distributed": ""
+  },
+  "Excel.ChartAxisDisplayUnit": {
+    "None": "",
+    "Hundreds": "",
+    "Thousands": "",
+    "TenThousands": "",
+    "HundredThousands": "",
+    "Millions": "",
+    "TenMillions": "",
+    "HundredMillons": "",
+    "Billions": "",
+    "Trillions": "",
+    "Custom": ""
+  },
+  "Excel.ChartTrendlineType": {
+    "Linear": "",
+    "Expontential": "",
+    "Logarithmic": "",
+    "MovingAvg": "",
+    "Polynomial": "",
+    "Power": ""
+  },
+  "Excel.ChartAxisType": {
+    "Invalid": "",
+    "Category": "",
+    "Value": "",
+    "SeriesAxis": ""
+  },
+  "Excel.ChartAxisTimeUnit": {
+    "Days": "",
+    "Months": "",
+    "Years": ""
+  },
+  "Excel.ChartAxisCategoryType": {
+    "Automatic": "",
+    "TextAxis": "",
+    "DateAxis": ""
+  },
+	"Excel.ChartAxisGroup":{
 		"Primary": "",
 		"Secondary": ""
 	},
-	"Excel.AxisScaleType":{
+	"Excel.ChartAxisScaleType":{
 		"Linear": "",
 		"Logarithmic": ""
-	}
+  },
+  "Excel.ChartDisplayBlanksAs":{
+    "NotPlotted": "",
+    "Zero": "",
+    "Interplotted": ""
+  },
+  "Excel.ChartPlotBy":{
+    "Rows": "",
+    "Columns": ""
+  },
+  "Excel.ChartSplitStype":{
+    "SplitByPosition": "",
+    "SplitByValue": "",
+    "SplitByPercentValue": "",
+    "SplitByCustomSplit": ""
+  },
+  "Excel.ChartSeriesType":{
+    "Column": "",
+    "Bar": "",
+    "Bar3D": "",
+    "Line": "",
+    "Pie": "",
+    "XYScatter": "",
+    "Area": "",
+    "Area3D": "",
+    "Doughnut": "",
+    "Radar": "",
+    "Surface3D": "",
+    "Column3D": ""
+  }
 }

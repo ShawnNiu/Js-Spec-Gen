@@ -36,7 +36,7 @@ chartTrendlineCollectionObject.add(type);
 #### Parameters
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string|Optional. Specifies the trendline type. The default value is "Linear".  Possible values are: Linear, Expontential, Logarithmic, MovingAvg, Polynomial, Power|
+|type|string|Optional. Specifies the trendline type. The default value is "Linear".|
 
 #### Returns
 [ChartTrendline](charttrendline.md)

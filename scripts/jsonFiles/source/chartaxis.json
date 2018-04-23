@@ -200,12 +200,12 @@
     },
     {
       "name": "type",
-      "dataType": "string",
+      "dataType": "AxisType",
       "description": "Represents the axis type.",
       "isReadOnly": true,
-      "enumNameJs": "Excel.AxisType",
+      "enumNameJs": null,
       "isCollection": false,
-      "isRelationship": false,
+      "isRelationship": true,
       "reqSet": "1.7",
       "isKey": null,
       "notes": null
@@ -217,7 +217,7 @@
       "isReadOnly": true,
       "enumNameJs": "Excel.AxisGroup",
       "isCollection": false,
-      "isRelationship": false,
+      "isRelationship": true,
       "reqSet": "1.7",
       "isKey": null,
       "notes": null
@@ -229,7 +229,7 @@
       "isReadOnly": false,
       "enumNameJs": "Excel.AxisScaleType",
       "isCollection": false,
-      "isRelationship": false,
+      "isRelationship": true,
       "reqSet": "1.7",
       "isKey": null,
       "notes": null
@@ -307,45 +307,9 @@
       "notes": null
     },
     {
-      "name": "crosses",
-      "dataType": "string",
-      "description": "Represents the specified axis where the other axis crosses.",
-      "isReadOnly": false,
-      "enumNameJs": "Excel.AxisCrosses",
-      "isCollection": false,
-      "isRelationship": true,
-      "reqSet": "1.7",
-      "isKey": null,
-      "notes": null
-    },
-    {
-      "name": "crossesAt",
-      "dataType": "double",
-      "description": "Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method.",
-      "isReadOnly": true,
-      "enumNameJs": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "reqSet": "1.7",
-      "isKey": null,
-      "notes": null
-    },
-    {
       "name": "visible",
       "dataType": "bool",
       "description": "A boolean value represents the visibility of the axis.",
-      "isReadOnly": false,
-      "enumNameJs": null,
-      "isCollection": false,
-      "isRelationship": false,
-      "reqSet": "1.7",
-      "isKey": null,
-      "notes": null
-    },
-    {
-      "name": "axisBetweenCategories",
-      "dataType": "bool",
-      "description": "Represents whether value axis crosses the category axis between categories.",
       "isReadOnly": false,
       "enumNameJs": null,
       "isCollection": false,
@@ -413,6 +377,114 @@
       "reqSet": "1.7",
       "isKey": null,
       "notes": null
+    },
+    {
+      "name": "position",
+      "dataType": "string",
+      "description": "Represents the specified axis position where the other axis crosses.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartAxisPosition",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "positionAt",
+      "dataType": "double",
+      "description": "Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "isBetweenCategories",
+      "dataType": "bool",
+      "description": "Represents whether value axis crosses the category axis between categories.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "alignment",
+      "dataType": "string",
+      "description": "Represents the alignment for the specified axis tick label.",
+      "isReadOnly": false,
+      "enumNameJs": "Excel.ChartTextHorizontalAlignment",
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "multiLevel",
+      "dataType": "bool",
+      "description": "Represents whether an axis is multilevel or not.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "numberFormat",
+      "dataType": "string",
+      "description": "Represents the format code for the axis tick label.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "numberFormatLinked",
+      "dataType": "bool",
+      "description": "Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "offset",
+      "dataType": "int",
+      "description": "Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
+    },
+    {
+      "name": "textOrientation",
+      "dataType": "object",
+      "description": "Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.",
+      "isReadOnly": false,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": false,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
     }
   ],
   "methods": [
@@ -461,12 +533,12 @@
       "reqSet": "1.7"
     },
     {
-      "name": "setCrossesAt",
+      "name": "setPositionAt",
       "returnType": "void",
-      "description": "Set the specified axis where the other axis crosses at.",
-      "syntax": "chartAxisObject.setCrossesAt(value);",
-      "signature": "setCrossesAt(value: double)",
-      "restfulName": "setCrossesAt",
+      "description": "Set the specified axis position where the other axis crosses at.",
+      "syntax": "chartAxisObject.setPositionAt(value);",
+      "signature": "setPositionAt(value: double)",
+      "restfulName": "setPositionAt",
       "notes": null,
       "httpSuccessResponse": null,
       "parameters": [
@@ -474,13 +546,13 @@
           "name": "value",
           "dataType": "double",
           "isCollection": false,
-          "description": "The value of custom crosses",
+          "description": "Custom value of the crosses at",
           "isRequired": true,
           "enumNameJs": null,
           "notes": null
         }
       ],
-      "reqSet": "1.7"
+      "reqSet": "1.8"
     }
   ]
 }

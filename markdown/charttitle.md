@@ -30,7 +30,7 @@ _See property access [examples.](#property-access-examples)_
 
 | Method		   | Return Type	|Description| Req. Set|
 |:---------------|:--------|:----------|:----|
-|[getSubstring(start: number, length: number)](#getsubstringstart-number-length-number)|[ChartFormatString](chartformatstring.md)|Get the substring of a chart title. Line break '\n' also counts one charater.|[ApiSet.InProgressFeatures.ChartingAPI](../requirement-sets/excel-api-requirement-sets.md)|
+|[getSubstring(start: number, length: number)](#getsubstringstart-number-length-number)|[ChartFormatString](chartformatstring.md)|Get the substring of a chart title. Line break '\n' also counts one charater.|[1.7](../requirement-sets/excel-api-requirement-sets.md)|
 |[setFormula(formula: string)](#setformulaformula-string)|void|Sets a string value that represents the formula of chart title using A1-style notation.|[1.7](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Method Details

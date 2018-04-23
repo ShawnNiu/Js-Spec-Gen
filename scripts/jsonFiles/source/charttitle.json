@@ -205,7 +205,7 @@
           "notes": null
         }
       ],
-      "reqSet": "ApiSet.InProgressFeatures.ChartingAPI"
+      "reqSet": "1.7"
     },
     {
       "name": "setFormula",

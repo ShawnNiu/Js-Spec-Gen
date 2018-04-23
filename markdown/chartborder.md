@@ -17,5 +17,24 @@ _See property access [examples.](#property-access-examples)_
 |lineStyle|string|Represents the line style of the border.|[1.7](../requirement-sets/excel-api-requirement-sets.md)|
 
 ## Methods
+
+| Method		   | Return Type	|Description| Req. Set|
+|:---------------|:--------|:----------|:----|
+|[clear()](#clear)|void|Clear the border format of a chart element.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+
+## Method Details
+
+
+### clear()
+Clear the border format of a chart element.
+
+#### Syntax
+```js
+chartBorderObject.clear();
+```
+
+#### Parameters
 None
 
+#### Returns
+void

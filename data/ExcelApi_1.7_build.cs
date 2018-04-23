@@ -3489,6 +3489,116 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.2)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_Worksheet)]
 		Worksheet Worksheet { get; }
+
+		/// <summary>
+		/// Represents whether to display axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the Show Axis Field Buttons command on the Field Buttons drop-down list of the Analyze tab, which is available when a PivotChart is selected.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowAxisFieldButtons)]
+		bool? ShowAxisFieldButtons { get; set; }
+
+		/// <summary>
+		/// Represents whether to display legend field buttons on a PivotChart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowLegendFieldButtons)]
+		bool? ShowLegendFieldButtons { get; set; }
+
+		/// <summary>
+		/// Represents whether to display report filter field buttons on a PivotChart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowReportFilterFieldButtons)]
+		bool? ShowReportFilterFieldButtons { get; set; }
+
+		/// <summary>
+		/// Represents whether to display show value field buttons on a PivotChart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowValueFieldButtons)]
+		bool? ShowValueFieldButtons { get; set; }
+
+		/// <summary>
+		/// Represents whether to to show the data labels when the value is greater than the maximum value on the value axis. If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels. This property applies to 2-D charts only.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ShowDataLabelsOverMaximum)]
+		bool? ShowDataLabelsOverMaximum { get; set; }
+
+		/// <summary>
+		/// Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are being sourced from. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_CategoryLabelLevel)]
+		[JsonStringify()]
+		int? CategoryLabelLevel { get; set; }
+
+		/// <summary>
+		/// Returns or sets an integer that represents the color scheme for the chart. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_ColorScheme)]
+		[JsonStringify()]
+		int ColorScheme { get; set; }
+
+		/// <summary>
+		/// Returns or sets the chart style for the chart. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_Style)]
+		[JsonStringify()]
+		int Style { get; set; }
+
+		/// <summary>
+		/// Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_DisplayBlanksAs)]
+		[JsonStringify()]
+		ChartDisplayBlanksAs DisplayBlanksAs { get; set; }
+
+		/// <summary>
+		/// Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_PlotBy)]
+		[JsonStringify()]
+		ChartPlotBy PlotBy { get; set; }
+
+		/// <summary>
+		/// True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_PlotVisibleOnly)]
+		[JsonStringify()]
+		bool PlotVisibleOnly { get; set; }
+
+		/// <summary>
+		/// Returns or sets a ChartSeriesNameLevel enumeration constant referring to
+		/// the level of where the series names are being sourced from. Read/Write.
+		/// </summary>
+		/// <returns></returns>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_SeriesNameLevel)]
+		[JsonStringify()]
+		int? SeriesNameLevel { get; set; }
+
+		/// <summary>
+		/// True if the chart area of the chart has rounded corners. Read/Write.
+		/// </summary>
+		/// <returns></returns>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_RoundedCorners)]
+		[JsonStringify()]
+		bool RoundedCorners { get; set; }
+
+		/// <summary>
+		/// Represents the plotArea for the chart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.Chart_PlotArea)]
+		[JsonStringify()]
+		ChartPlotArea PlotArea { get; }
 	}
 
 	/// <summary>
@@ -3747,6 +3857,114 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_SetBubbleSizes)]
 		void SetBubbleSizes([TypeScriptType("Excel.Range")]object sourceData);
+
+		/// <summary>
+		/// Represents the error bar object for a chart series.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_XErrorBars)]
+		[JsonStringify()]
+		ChartErrorBars XErrorBars { get; }
+
+		/// <summary>
+		/// Represents the error bar object for a chart series.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_YErrorBars)]
+		[JsonStringify()]
+		ChartErrorBars YErrorBars { get; }
+
+		/// <summary>
+		/// Represents a collection of all dataLabels in the series.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_DataLabels)]
+		[JsonStringify()]
+		ChartDataLabels DataLabels { get; }
+
+		/// <summary>
+		/// Returns or sets the group for the specified series. Read/Write
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_AxisGroup)]
+		ChartAxisGroup AxisGroup { get; set; }
+
+		/// <summary>
+		/// Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Explosion)]
+		int? Explosion { get; set; }
+
+		/// <summary>
+		/// Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_FirstSliceAngle)]
+		int? FirstSliceAngle { get; set; }
+
+		/// <summary>
+		/// True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_InvertIfNegative)]
+		bool InvertIfNegative { get; set; }
+
+		/// <summary>
+		/// Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_BubbleScale)]
+		double? BubbleScale { get; set; }
+
+		/// <summary>
+		/// Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_SecondPlotSize)]
+		int? SecondPlotSize { get; set; }
+
+		/// <summary>
+		/// Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_SplitType)]
+		ChartSplitStype? SplitType { get; set; }
+
+		/// <summary>
+		/// Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_SplitValue)]
+		double? SplitValue { get; set; }
+
+		/// <summary>
+		/// True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_VaryByCategories)]
+		bool VaryByCategories { get; set; }
+
+		/// <summary>
+		/// True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_HasLeaderLines)]
+		bool HasLeaderLines { get; set; }
+
+		/// <summary>
+		/// Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Overlap)]
+		int? Overlap { get; set; }
+
+		/// <summary>
+		/// Returns the value that represents the series type.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartSeries_Type)]
+		ChartSeriesType Type { get; }
 	}
 
 	/// <summary>
@@ -4174,40 +4392,11 @@ internal static class ChartDispatchIds
 		bool? ReversePlotOrder { get; set; }
 
 		/// <summary>
-		/// Represents the specified axis where the other axis crosses. See Excel.AxisCrosses for details.
-		/// </summary>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Crosses)]
-		AxisCrosses? Crosses { get; set; }
-
-		/// <summary>
-		/// Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method.
-		/// </summary>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_CrossesAt)]
-		double? CrossesAt { get; }
-
-		/// <summary>
-		/// Set the specified axis where the other axis crosses at.
-		/// </summary>
-		/// <param name="value">The value of custom crosses</param>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetCrossesAt)]
-		void SetCrossesAt(double value);
-
-		/// <summary>
 		/// A boolean value represents the visibility of the axis.
 		/// </summary>
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Visible)]
 		bool Visible { get; set; }
-
-		/// <summary>
-		/// Represents whether value axis crosses the category axis between categories.
-		/// </summary>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_AxisBetweenCategories)]
-		bool? AxisBetweenCategories { get; set; }
 
 		/// <summary>
 		/// Represents the type of major tick mark for the specified axis. See Excel.AxisTickMark for details.
@@ -4243,6 +4432,77 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_TickLabelSpacing)]
 		object TickLabelSpacing { get; set; }
+
+		/// <summary>
+		/// Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Position)]
+		ChartAxisPosition? Position { get; set; }
+
+		/// <summary>
+		/// Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_PositionAt)]
+		double? PositionAt { get; }
+
+		/// <summary>
+		/// Set the specified axis position where the other axis crosses at.
+		/// </summary>
+		/// <param name="value">Custom value of the crosses at</param>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_SetPositionAt)]
+		void SetPositionAt(double value);
+
+		/// <summary>
+		/// Represents whether value axis crosses the category axis between categories.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_IsBetweenCategories)]
+		bool? IsBetweenCategories { get; set; }
+
+		/// <summary>
+		/// Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Alignment)]
+		ChartTickLabelAlignment? Alignment { get; set; }
+
+		/// <summary>
+		/// Represents whether an axis is multilevel or not.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_MultiLevel)]
+		bool? MultiLevel { get; set; }
+
+		/// <summary>
+		/// Represents the format code for the axis tick label.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_NumberFormat)]
+		string NumberFormat { get; set; }
+
+		/// <summary>
+		/// Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_NumberFormatLinked)]
+		bool? NumberFormatLinked { get; set; }
+
+		/// <summary>
+		/// Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_Offset)]
+		int? Offset { get; set; }
+
+		/// <summary>
+		/// Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxis_TextOrientation)]
+		object TextOrientation { get; set; }
 	}
 
 	/// <summary>
@@ -4271,6 +4531,14 @@ internal static class ChartDispatchIds
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxisFormat_Line)]
 		[JsonStringify()]
 		ChartLineFormat Line { get; }
+
+		/// <summary>
+		/// Represents chart fill formatting.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxisFormat_Fill)]
+		[JsonStringify()]
+		ChartFill Fill { get; }
 	}
 
 	/// <summary>
@@ -4305,6 +4573,14 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxisTitle_Visible)]
 		bool Visible { get; set; }
+
+		/// <summary>
+		/// A string value that represents the formula of chart axis title using A1-style notation.
+		/// </summary>
+		/// <param name="formula"> a string that present the formula to set </param>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxisTitle_SetFormula)]
+		void SetFormula(string formula);
 	}
 
 	/// <summary>
@@ -4325,6 +4601,22 @@ internal static class ChartDispatchIds
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxisTitleFormat_Font)]
 		[JsonStringify()]
 		ChartFont Font { get; }
+
+		/// <summary>
+		/// Represents chart fill formatting.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxisTitleFormat_Fill)]
+		[JsonStringify()]
+		ChartFill Fill { get; }
+
+		/// <summary>
+		/// Represents the border format, which includes color, linestyle and weight.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartAxisTitleFormat_Border)]
+		[JsonStringify()]
+		ChartBorder Border { get; }
 	}
 
 	/// <summary>
@@ -4401,6 +4693,54 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.1)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabels_Separator)]
 		string Separator { get; set; }
+
+		/// <summary>
+		/// Represents whether data labels automatically generates appropriate text based on context.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabels_AutoText)]
+		[JsonStringify()]
+		bool? AutoText { get; set; }
+
+		/// <summary>
+		/// Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This property is valid only when TextOrientation of data label is 0.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabels_HorizontalAlignment)]
+		[JsonStringify()]
+		ChartTextHorizontalAlignment? HorizontalAlignment { get; set; }
+
+		/// <summary>
+		/// Represents the format code for data labels.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabels_NumberFormat)]
+		[JsonStringify()]
+		string NumberFormat { get; set; }
+
+		/// <summary>
+		/// Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabels_NumberFormatLinked)]
+		[JsonStringify()]
+		bool? NumberFormatLinked { get; set; }
+
+		/// <summary>
+		/// Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabels_TextOrientation)]
+		[JsonStringify()]
+		int? TextOrientation { get; set; }
+
+		/// <summary>
+		/// Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This property is valid only when TextOrientation of data label is 90, -90 or 180.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabels_VerticalAlignment)]
+		[JsonStringify()]
+		ChartTextVerticalAlignment? VerticalAlignment { get; set; }
 	}
 
 	/// <summary>
@@ -4469,6 +4809,98 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Separator)]
 		string Separator { get; set; }
+
+		/// <summary>
+		/// Represents the distance, in points, from the top edge of chart data label to the top of chart area. Null if chart data label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Top)]
+		double? Top { get; set; }
+
+		/// <summary>
+		/// Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Null if chart data label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Left)]
+		double? Left { get; set; }
+
+		/// <summary>
+		/// Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Width)]
+		double? Width { get; }
+
+		/// <summary>
+		/// Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Height)]
+		double? Height { get; }
+
+		/// <summary>
+		/// String value that represents the formula of chart data label using A1-style notation.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Formula)]
+		string Formula { get; set; }
+
+		/// <summary>
+		/// Represents the text orientation of chart data label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_TextOrientation)]
+		int? TextOrientation { get; set; }
+
+		/// <summary>
+		/// Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This property is valid only when TextOrientation of data label is 0.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_VerticalAlignment)]
+		ChartTextVerticalAlignment? VerticalAlignment { get; set; }
+
+		/// <summary>
+		/// Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This property is valid only when TextOrientation of data label is 90, -90 or 180.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_HorizontalAlignment)]
+		ChartTextHorizontalAlignment? HorizontalAlignment { get; set; }
+
+		/// <summary>
+		/// String representing the text of the data label on a chart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Text)]
+		string Text { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if data label automatically generates appropriate text based on context.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_AutoText)]
+		bool? AutoText { get; set; }
+
+		/// <summary>
+		/// String value that represents the format code for data label.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_NumberFormat)]
+		string NumberFormat { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_NumberFormatLinked)]
+		bool? NumberFormatLinked { get; set; }
+
+		/// <summary>
+		/// Represents the format of chart data label.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabel_Format)]
+		[JsonStringify()]
+		ChartDataLabelFormat Format { get; }
 	}
 
 	/// <summary>
@@ -4497,6 +4929,82 @@ internal static class ChartDispatchIds
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabelFormat_Fill)]
 		[JsonStringify()]
 		ChartFill Fill { get; }
+
+		/// <summary>
+		/// Represents the border format, which includes color, linestyle and weight.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartDataLabelFormat_Border)]
+		[JsonStringify()]
+		ChartBorder Border { get; }
+	}
+
+	/// <summary>
+	/// This object represents the attributes for chart error bars object.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+	[ClientCallableComType(Name = "IChartErrorBars", InterfaceId = "D9D9DD16-CFB6-4CAA-B2E6-E7AB3FDDF556", CoClassName = "ChartErrorBars")]
+	public interface ChartErrorBars
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBars_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+		
+		/// <summary>
+		/// Represents whether have the end style cap for the error bars.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBars_EndStyleCap)]
+		bool? EndStyleCap { get; set; }
+
+		/// <summary>
+		/// Represents the formatting of chart ErrorBars.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBars_Format)]
+		[JsonStringify()]
+		ChartErrorBarsFormat Format { get; }
+
+		/// <summary>
+		/// Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBars_Include)]
+		ChartErrorBarsInclude? Include { get; set; }
+
+		/// <summary>
+		/// Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBars_Type)]
+		ChartErrorBarsType? Type { get; set; }
+
+		/// <summary>
+		/// Represents whether shown error bars.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBars_Visible)]
+		bool Visible { get; set; }
+	}
+
+	/// <summary>
+	/// Encapsulates the format properties for chart error bars.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+	[ClientCallableComType(Name = "IChartErrorBarsFormat", InterfaceId = "c309bd18-30a5-41e9-8b93-3cae54255cdd", CoClassName = "ChartErrorBarsFormat")]
+	public interface ChartErrorBarsFormat
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBarsFormat_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Represents chart line formatting.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartErrorBarsFormat_Line)]
+		[JsonStringify()]
+		ChartLineFormat Line { get; }
 	}
 
 	/// <summary>
@@ -4648,6 +5156,41 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_Visible)]
 		bool Visible { get; set; }
+
+		/// <summary>
+		/// Represents the height of the legendEntry on the chart Legend.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_Height)]
+		double? Height { get; }
+
+		/// <summary>
+		/// Represents the index of the LegendEntry in the Chart Legend.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_Index)]
+		int? Index { get; }
+
+		/// <summary>
+		/// Represents the left of a chart legendEntry.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_Left)]
+		double? Left { get; }
+
+		/// <summary>
+		/// Represents the top of a chart legendEntry.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_Top)]
+		double? Top { get; }
+
+		/// <summary>
+		/// Represents the width of the legendEntry on the chart Legend.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendEntry_Width)]
+		double? Width { get; }
 	}
 
 	/// <summary>
@@ -4705,6 +5248,14 @@ internal static class ChartDispatchIds
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendFormat_Fill)]
 		[JsonStringify()]
 		ChartFill Fill { get; }
+
+		/// <summary>
+		/// Represents the border format, which includes color, linestyle and weight.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartLegendFormat_Border)]
+		[JsonStringify()]
+		ChartBorder Border { get; }
 	}
 
 	/// <summary>
@@ -4752,7 +5303,7 @@ internal static class ChartDispatchIds
 		/// </summary>
 		/// <param name="start">Start position of substring to be retrieved. Position start with 0.</param>
 		/// <param name="length">Length of substring to be retrieved.</param>
-		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTitle_GetSubstring)]
 		[ClientCallableOperation(OperationType = OperationType.Read, RESTfulName = "Substring")]
 		ChartFormatString GetSubstring(int start, int length);
@@ -4832,7 +5383,7 @@ internal static class ChartDispatchIds
 	/// <summary>
 	/// Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.
 	/// </summary>
-	[ApiSet(Version = 1.8)]
+	[ApiSet(Version = 1.7)]
 	[ClientCallableComType(Name = "IChartFormatString", InterfaceId = "B1AB4E90-1A7D-4BEF-897E-FEB990ABC4B7", CoClassName = "ChartFormatString")]
 	public interface ChartFormatString
 	{
@@ -4942,6 +5493,13 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartBorder_Weight)]
 		int Weight { get; set; }
+
+		/// <summary>
+		/// Clear the border format of a chart element.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartBorder_Clear)]
+		void Clear();
 	}
 
 	/// <summary>
@@ -5059,32 +5617,11 @@ internal static class ChartDispatchIds
 		int _Id { get; }
 
 		/// <summary>
-		/// Represents the number of periods that the trendline extends backward.
-		/// </summary>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Backward)]
-		double? Backward { get; set; }
-
-		/// <summary>
 		/// Delete the trendline object.
 		/// </summary>
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Delete)]
 		void Delete();
-
-		/// <summary>
-		/// True if the equation for the trendline is displayed on the chart.
-		/// </summary>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_DisplayEquation)]
-		bool? DisplayEquation { get; set; }
-
-		/// <summary>
-		/// True if the R-squared for the trendline is displayed on the chart.
-		/// </summary>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_DisplayRSquared)]
-		bool? DisplayRSquared { get; set; }
 
 		/// <summary>
 		/// Represents the formatting of a chart trendline. Read-only.
@@ -5100,13 +5637,6 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Intercept)]
 		object Intercept { get; set; }
-
-		/// <summary>
-		/// Represents the number of periods that the trendline extends forward.
-		/// </summary>
-		[ApiSet(Version = 1.7)]
-		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Forward)]
-		double? Forward { get; set; }
 
 		/// <summary>
 		/// Represents the period of a chart trendline, only for trendline with MovingAverage type.
@@ -5135,6 +5665,42 @@ internal static class ChartDispatchIds
 		[ApiSet(Version = 1.7)]
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Type)]
 		TrendlineType Type { get; set; }
+
+		/// <summary>
+		/// Represents the number of periods that the trendline extends backward.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_BackwardPeriod)]
+		double? BackwardPeriod { get; set; }
+
+		/// <summary>
+		/// True if the equation for the trendline is displayed on the chart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_ShowEquation)]
+		bool? ShowEquation { get; set; }
+
+		/// <summary>
+		/// True if the R-squared for the trendline is displayed on the chart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_ShowRSquared)]
+		bool? ShowRSquared { get; set; }
+
+		/// <summary>
+		/// Represents the number of periods that the trendline extends forward.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_ForwardPeriod)]
+		double? ForwardPeriod { get; set; }
+
+		/// <summary>
+		/// Represents the label of a chart trendline.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[JsonStringify()]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendline_Label)]
+		ChartTrendlineLabel Label { get; }
 	}
 
 	/// <summary>
@@ -5193,6 +5759,260 @@ internal static class ChartDispatchIds
 		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineFormat_Line)]
 		[JsonStringify()]
 		ChartLineFormat Line { get; }
+	}
+
+	/// <summary>
+	/// This object represents the attributes for a chart trendline lable object.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+	[ClientCallableComType(Name = "IChartTrendlineLabel", InterfaceId = "1aae9805-58b8-4458-8f1a-f29cc4c603eb", CoClassName = "ChartTrendlineLabel")]
+	public interface ChartTrendlineLabel
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Represents the distance, in points, from the top edge of chart trendline label to the top of chart area. Null if chart trendline label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_Top)]
+		double? Top { get; set; }
+
+		/// <summary>
+		/// Represents the distance, in points, from the left edge of chart trendline label to the left edge of chart area. Null if chart trendline label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_Left)]
+		double? Left { get; set; }
+
+		/// <summary>
+		/// Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_Width)]
+		double? Width { get; }
+
+		/// <summary>
+		/// Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_Height)]
+		double? Height { get; }
+
+		/// <summary>
+		/// String value that represents the formula of chart trendline label using A1-style notation.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_Formula)]
+		string Formula { get; set; }
+
+		/// <summary>
+		/// Represents the text orientation of chart trendline label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_TextOrientation)]
+		int? TextOrientation { get; set; }
+
+		/// <summary>
+		/// Represents the vertical alignment of chart trendline label. See Excel.ChartTextVerticalAlignment for details.
+		/// This property is valid only when TextOrientation of trendline label is 0.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_VerticalAlignment)]
+		ChartTextVerticalAlignment? VerticalAlignment { get; set; }
+
+		/// <summary>
+		/// Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
+		/// This property is valid only when TextOrientation of trendline label is 90, -90 or 180.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_HorizontalAlignment)]
+		ChartTextHorizontalAlignment? HorizontalAlignment { get; set; }
+
+		/// <summary>
+		/// String representing the text of the trendline label on a chart.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_Text)]
+		string Text { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if trendline label automatically generates appropriate text based on context.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_AutoText)]
+		bool? AutoText { get; set; }
+
+		/// <summary>
+		/// String value that represents the format code for trendline label.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_NumberFormat)]
+		string NumberFormat { get; set; }
+
+		/// <summary>
+		/// Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells). 
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_NumberFormatLinked)]
+		bool? NumberFormatLinked { get; set; }
+
+		/// <summary>
+		/// Represents the format of chart trendline label.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabel_Format)]
+		[JsonStringify()]
+		ChartTrendlineLabelFormat Format { get; }
+	}
+
+	/// <summary>
+	/// Encapsulates the format properties for the chart trendline label.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+	[ClientCallableComType(Name = "IChartTrendlineLabelFormat", InterfaceId = "1f309f70-6431-4e59-a9fb-aeeba78d6e00", CoClassName = "ChartTrendlineLabelFormat")]
+	public interface ChartTrendlineLabelFormat
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabelFormat_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Represents the fill format of the current chart trendline label.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabelFormat_Fill)]
+		[JsonStringify()]
+		ChartFill Fill { get; }
+
+		/// <summary>
+		/// Represents the border format, which includes color, linestyle and weight.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabelFormat_Border)]
+		[JsonStringify()]
+		ChartBorder Border { get; }
+
+		/// <summary>
+		/// Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartTrendlineLabelFormat_Font)]
+		[JsonStringify()]
+		ChartFont Font { get; }
+	}
+
+	/// <summary>
+	/// This object represents the attributes for a chart plotArea object.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+	[ClientCallableType(DeleteOperationName = "Delete")]
+	[ClientCallableComType(Name = "IChartPlotArea", InterfaceId = "8db45bb4-d033-481c-9573-a97dac99498a", CoClassName = "ChartPlotArea")]
+	public interface ChartPlotArea
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Represents the formatting of a chart plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_Format)]
+		[JsonStringify()]
+		ChartPlotAreaFormat Format { get; }
+
+		/// <summary>
+		/// Represents the height value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_Height)]
+		double Height { get; set; }
+
+		/// <summary>
+		/// Represents the insideHeight value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_InsideHeight)]
+		double InsideHeight { get; set; }
+		
+		/// <summary>
+		/// Represents the insideLeft value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_InsideLeft)]
+		double InsideLeft { get; set; }
+
+		/// <summary>
+		/// Represents the insideTop value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_InsideTop)]
+		double InsideTop { get; set; }
+
+		/// <summary>
+		/// Represents the insideWidth value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_InsideWidth)]
+		double InsideWidth { get; set; }
+
+		/// <summary>
+		/// Represents the left value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_Left)]
+		double Left { get; set; }
+
+		/// <summary>
+		/// Represents the position of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_Position)]
+		ChartPlotAreaPosition Position { get; set; }
+
+		/// <summary>
+		/// Represents the top value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_Top)]
+		double Top { get; set; }
+
+		/// <summary>
+		/// Represents the width value of plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotArea_Width)]
+		double Width { get; set; }
+	}
+
+	/// <summary>
+	/// Represents the format properties for chart plotArea.
+	/// </summary>
+	[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+	[ClientCallableComType(Name = "IChartPlotAreaFormat", InterfaceId = "61299542-5ce6-41c7-b54f-29e67e48ce8a", CoClassName = "ChartPlotAreaFormat")]
+	public interface ChartPlotAreaFormat
+	{
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotAreaFormat_OnAccess)]
+		[ClientCallableOperation(OperationType = OperationType.Read)]
+		void _OnAccess();
+
+		/// <summary>
+		/// Represents the border attributes of a chart plotArea.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotAreaFormat_Border)]
+		[JsonStringify()]
+		ChartBorder Border { get; }
+
+		/// <summary>
+		/// Represents the fill format of an object, which includes background formating information.
+		/// </summary>
+		[ApiSet(Version = ApiSet.InProgressFeatures.ChartingAPI)]
+		[ClientCallableComMember(DispatchId = ChartDispatchIds.ChartPlotAreaFormat_Fill)]
+		[JsonStringify()]
+		ChartFill Fill { get; }
 	}
 
 	#endregion Charts

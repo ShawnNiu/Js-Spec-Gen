@@ -55,5 +55,28 @@
       "notes": null
     }
   ],
-  "methods": null
+  "methods": [
+    {
+      "name": "setFormula",
+      "returnType": "void",
+      "description": "A string value that represents the formula of chart axis title using A1-style notation.",
+      "syntax": "chartAxisTitleObject.setFormula(formula);",
+      "signature": "setFormula(formula: string)",
+      "restfulName": "setFormula",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": [
+        {
+          "name": "formula",
+          "dataType": "string",
+          "isCollection": false,
+          "description": " a string that present the formula to set ",
+          "isRequired": true,
+          "enumNameJs": null,
+          "notes": null
+        }
+      ],
+      "reqSet": "1.8"
+    }
+  ]
 }

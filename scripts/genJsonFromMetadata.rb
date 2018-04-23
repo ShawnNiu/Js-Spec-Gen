@@ -155,6 +155,10 @@ end
 		req_set = req_set.split(',')[0]
 	end
 
+	if req_set =='ApiSet.InProgressFeatures.ChartingAPI'
+		req_set = '1.8'
+	end
+
 	## For new object, load its resource and fill the description
 	if line.include?('public interface') || line.include?('public struct')
 		# Get the third Excel

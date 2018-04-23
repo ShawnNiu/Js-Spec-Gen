@@ -55,5 +55,18 @@
       "notes": null
     }
   ],
-  "methods": null
+  "methods": [
+    {
+      "name": "clear",
+      "returnType": "void",
+      "description": "Clear the border format of a chart element.",
+      "syntax": "chartBorderObject.clear();",
+      "signature": "clear()",
+      "restfulName": "clear",
+      "notes": null,
+      "httpSuccessResponse": null,
+      "parameters": null,
+      "reqSet": "1.8"
+    }
+  ]
 }

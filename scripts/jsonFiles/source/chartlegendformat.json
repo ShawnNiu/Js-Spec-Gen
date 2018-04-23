@@ -41,6 +41,18 @@
       "reqSet": "1.1",
       "isKey": null,
       "notes": null
+    },
+    {
+      "name": "border",
+      "dataType": "ChartBorder",
+      "description": "Represents the border format, which includes color, linestyle and weight.",
+      "isReadOnly": true,
+      "enumNameJs": null,
+      "isCollection": false,
+      "isRelationship": true,
+      "reqSet": "1.8",
+      "isKey": null,
+      "notes": null
     }
   ],
   "methods": null

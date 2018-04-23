@@ -48,7 +48,7 @@
           "isCollection": false,
           "description": "Specifies the trendline type. The default value is \"Linear\".",
           "isRequired": false,
-          "enumNameJs": "Excel.TrendlineType",
+          "enumNameJs": "Excel.ChartTrendline",
           "notes": null
         }
       ],

@@ -72,7 +72,7 @@
           "isCollection": false,
           "description": "Specifies the axis type.",
           "isRequired": true,
-          "enumNameJs": "Excel.AxisType",
+          "enumNameJs": "Excel.ChartAxis",
           "notes": null
         },
         {
@@ -81,7 +81,7 @@
           "isCollection": false,
           "description": "Specifies the axis group.",
           "isRequired": false,
-          "enumNameJs": "Excel.AxisGroup",
+          "enumNameJs": "Excel.ChartAxis",
           "notes": null
         }
       ],

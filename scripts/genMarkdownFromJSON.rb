@@ -80,7 +80,7 @@ module SpecMaker
 	@resource = ''
 	@gsType = ''
 	@changes = []
-	@changes.push '|Object| What is new| Description|Feedback|' + NEWLINE
+	@changes.push '|Object| What is new| Description|Req. Set|' + NEWLINE
 	@changes.push '|:----|:----|:----|:----|' + NEWLINE
 
 	def self.uncapitalize (str="")
