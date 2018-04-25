@@ -22,7 +22,7 @@ Represents a series in a chart.
 |markerSize|int|Represents marker size of a chart series.|[1.7](../requirement-sets/excel-api-requirement-sets.md)|
 |markerStyle|string|Represents marker style of a chart series. Possible values are: Automatic, None, Square, Diamond, Triangle, X, Star, Dot, Dash, Circle, Plus, Picture.|[1.7](../requirement-sets/excel-api-requirement-sets.md)|
 |name|string|Represents the name of a series in a chart.|[1.1](../requirement-sets/excel-api-requirement-sets.md)|
-|overlap|int|Specifies how bars and columns are positioned. Can be a value between ╬ô├ç├┤ 100 and 100. Applies only to 2-D bar and 2-D column charts. ReadWrite.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
+|overlap|int|Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts. ReadWrite.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 |plotOrder|int|Represents the plot order of a chart series within the chart group.|[1.7](../requirement-sets/excel-api-requirement-sets.md)|
 |secondPlotSize|int|Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. ReadWrite.|[1.8](../requirement-sets/excel-api-requirement-sets.md)|
 |showShadow|bool|Boolean value representing if the series has shadow or not.|[1.7](../requirement-sets/excel-api-requirement-sets.md)|
