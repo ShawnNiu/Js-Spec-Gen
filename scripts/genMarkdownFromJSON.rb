@@ -26,6 +26,7 @@ module SpecMaker
 	GETTERSETTERLINK = '_See property access [examples.](#property-access-examples)_'
 	GETTERSETTER = 'Property access examples'
 	PROD_REQUIREMENTS = ['1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7']
+	EXCLUDE_REQUIREMENTS = ['ApiSet.InProgressFeatures.Event']
 	BACKTOMETHOD = '[Back](#methods)'
 
 	BACKTOPROPERTY = NEWLINE + '[Back](#properties)'
@@ -121,7 +122,7 @@ module SpecMaker
 
 		@mdlines.push (PIPE + prop[:name] + PIPE + dataTypePlusLink + PIPE + finalDesc + PIPE + "[#{prop[:reqSet]}](../requirement-sets/#{HOST}-api-requirement-sets.md)"  + PIPE + NEWLINE)
 
-		if !(PROD_REQUIREMENTS.include? prop[:reqSet])
+		if !(PROD_REQUIREMENTS.include? prop[:reqSet]) && !(EXCLUDE_REQUIREMENTS.include? prop[:reqSet])
 			whatType = 'Property'
 			if prop[:isRelationship]
 				whatType = 'Relationship'
@@ -160,7 +161,7 @@ module SpecMaker
 
 		@mdlines.push (PIPE + methodPlusLink + PIPE + dataTypePlusLink + PIPE + method[:description] + PIPE + "[#{method[:reqSet]}](../requirement-sets/#{HOST}-api-requirement-sets.md)" + PIPE + NEWLINE)
 
-		if !(PROD_REQUIREMENTS.include? method[:reqSet])
+		if !(PROD_REQUIREMENTS.include? method[:reqSet]) && !(EXCLUDE_REQUIREMENTS.include? method[:reqSet])
 			@changes.push (PIPE + "[#{@resource}](../markdown/#{@resource.downcase}.md)" + PIPE + "_Method_ > " + methodPlusLinkFull  + PIPE + method[:description]  + PIPE + method[:reqSet] + PIPE + NEWLINE)
 
 			# @changes.push "**Resource name:** [#{@resource}](../excel/#{@resource.downcase}.md) </br>" + NEWLINE
