@@ -12,7 +12,7 @@
 |[chart](../markdown/chart.md)|_Property_ > showLegendFieldButtonsOnPivotChart|Represents whether to display legend field buttons on a PivotChart.|1.8|
 |[chart](../markdown/chart.md)|_Property_ > showReportFilterFieldButtonsOnPivotChart|Represents whether to display report filter field buttons on a PivotChart.|1.8|
 |[chart](../markdown/chart.md)|_Property_ > showValueFieldButtonsOnPivotChart|Represents whether to display show value field buttons on a PivotChart.|1.8|
-|[chart](../markdown/chart.md)|_Property_ > style|Returns or sets the chart style for the chart. ReadWrite.|1.8|
+|[ChartAreaFormat](../markdown/chartareaformat.md)|_Property_ > style|Returns or sets the chart style for the chart. The values of the style property correspond to the available options on the Chart Styles group on the Design tab on the Ribbon. The Design tab is available when you select a chart. ReadWrite.|1.8|
 |[chart](../markdown/chart.md)|_Relationship_ > plotArea|Represents the plotArea for the chart. Read-only.|1.8|
 |[chartAxis](../markdown/chartaxis.md)|_Property_ > isBetweenCategories|Represents whether value axis crosses the category axis between categories.|1.8|
 |[chartAxis](../markdown/chartaxis.md)|_Property_ > isMultiLevel|Represents whether an axis is multilevel or not.|1.8|
