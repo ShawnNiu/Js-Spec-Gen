@@ -5,7 +5,7 @@
 |[chart](../markdown/chart.md)|_Property_ > displayBlanksAs|Returns or sets the way that blank cells are plotted on a chart. ReadWrite. Possible values are: NotPlotted, Zero, Interplotted.|1.8|
 |[chart](../markdown/chart.md)|_Property_ > plotBy|Returns or sets the way columns or rows are used as data series on the chart. ReadWrite. Possible values are: Rows, Columns.|1.8|
 |[chart](../markdown/chart.md)|_Property_ > plotVisibleOnly|True if only visible cells are plotted. False if both visible and hidden cells are plotted. ReadWrite.|1.8|
-|[chart](../markdown/chart.md)|_Property_ > roundedCorners|True if the chart area of the chart has rounded corners. ReadWrite.|1.8|
+|[ChartAreaFormat](../markdown/chart.md)|_Property_ > hasRoundedCorners|True if the chart area of the chart has rounded corners. ReadWrite.|1.8|
 |[chart](../markdown/chart.md)|_Property_ > seriesNameLevel|Returns or sets a ChartSeriesNameLevel enumeration constant referring to|1.8|
 |[ChartPivotChart](../markdown/chart.md)|_Property_ > showAxisFieldButtons|Represents whether to display axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the Show Axis Field Buttons command on the Field Buttons drop-down list of the Analyze tab, which is available when a PivotChart is selected.|1.8|
 |[chart](../markdown/chart.md)|_Property_ >  LabelsOverMaximum|Represents whether to to show the data labels when the value is greater than the maximum value on the value axis. If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels. This property applies to 2-D charts only.|1.8|
